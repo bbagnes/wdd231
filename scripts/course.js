@@ -132,7 +132,7 @@ function createCourseCard(filteredCourses) {
 		document.querySelector(".courses").appendChild(card);
 });
     let total = document.createElement("li");
-    document.querySelector(".courses").appendChild(total);
+    card.appendChild(total);
     if (totalCredits == possibleCredits) {
             total.classList.add('complete');
         }
