@@ -176,7 +176,6 @@ main {
     grid-template: 40px auto / auto;
     min-width: 320px;
     width: auto;
-    align-content:space-around;
     align-items: center;
     background-color: #EEE8D3; 
     margin: 0 auto;

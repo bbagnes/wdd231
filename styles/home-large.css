@@ -1,13 +1,14 @@
 @media only screen and (min-width: 780px) {
 
     header {
-        display: block;
-        align-content: center;        
-        justify-content: space-around;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
     }
 
     figcaption {
-        font-size: medium;
+        font-size: large;
     }
 
     span {
@@ -44,6 +45,7 @@
         display: grid;
         grid-template: 40px auto auto/ 66% 33%;
         column-gap: 10px;
+        margin: 0 auto;
     }
     
     main h1 {
