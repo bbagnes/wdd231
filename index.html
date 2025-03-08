@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigham Bagnes">
-    <meta name="description" content="WDD 231 Main Project Page">
+    <meta name="description" content="WDD 231 Course Home Page">
+    <title>WDD 231 Course Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
 </head>
 <body>
-    
+    <header>
+        <img src="images/brigham_bagnes.webp" alt="Profile picture of Brigham Bagnes"> 
+        <span>Brigham J Bagnes</span>
+        <a id="menu" href="#"></a>
+            <nav>
+	            <ul class="navigation">
+		            <li><a href="#" class="home" target="_self">Home</a></li>
+		            <li><a href="#" class="chamber" target="_blank">Chamber</a></li>
+		            <li><a href="#" class="github" target="_blank">GitHub Profile</a></li>
+		            <li><a href="https://www.linkedin.com/in/brigham-bagnes-720451196/" class="linkedin" target="_blank">LinkedIn</a></li>		            
+	            </ul>        
+            </nav> 
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Utah, U.S.A.</h2>
+            <figure>
+                <img src="images/delicate-arch.webp" alt="Delicate Arch">
+                <figcaption><strong>Delicate Arch, Arches National Park.</strong></figcaption>
+            </figure>
+        </section>
+        <section class="progress">
+            <h2>Web and Computer Programming Certificate</h2>
+            <nav>
+	            <ul >
+		            <li><a href="#" class="all" target="_self">All Courses</a></li>
+		            <li><a href="#" class="cse" target="_self">CSE Courses</a></li>
+		            <li><a href="#" class="wdd" target="_self">WDD Courses</a></li>
+	            </ul>        
+            </nav>
+            <div class="courses">            
+            </div> 
+        </section>
+    </main>    
+    <footer>
+        <p>©<span id="currentyear"></span> * * * Brigham Bagnes * * * Utah, U.S.A.</p>
+        <p id="lastModified"></p>
+    </footer> 
 </body>
 </html>

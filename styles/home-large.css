@@ -1,0 +1,82 @@
+@media only screen and (min-width: 780px) {
+
+    header {
+        display: block;
+        align-content: center;        
+        justify-content: space-around;
+    }
+
+    figcaption {
+        font-size: medium;
+    }
+
+    span {
+        align-self: center;
+    }
+
+    header nav, section nav {
+        background-color: #dcba93;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+	.navigation {
+		display: flex;
+        justify-content: space-evenly;
+	}
+
+	.navigation li {
+		display: flex;
+		justify-content: space-evenly;
+        padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+
+    main {
+        display: grid;
+        grid-template: 40px auto auto/ 66% 33%;
+        column-gap: 10px;
+    }
+    
+    main h1 {
+        grid-column: span 2;
+        display: block;
+        margin: 10px;
+    }
+
+    section {
+        height: 420px;
+        margin: 15px;
+    }
+
+    section.progress {
+        width: 780px;
+        align-content: space-evenly;
+    }
+
+    .progress {
+        max-width: none;
+        column-span: all;
+        display: inline-block;
+        align-content: center;
+        justify-content: space-evenly;
+    } 
+
+    .progress ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .courses {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+}
