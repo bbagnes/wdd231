@@ -1,0 +1,68 @@
+[
+    {
+    "familyName": "Johnson",
+    "movedInDate": "2018-01-10",
+    "numFamilyMembers": 4,
+    "bishopVisited": true,
+    "individualMembers": [
+        {
+            "name": "Robert",
+            "gender": "Male",
+            "birthDate": "1980-10-14"
+        },
+        {
+            "name": "Susan",
+            "gender": "Female",
+            "birthDate": "1979-12-08"
+        },
+        {
+            "name": "Jennifer",
+            "gender": "Female",
+            "birthDate": "2007-4-18"
+        },
+        {
+            "name": "Robert Jr.",
+            "gender": "Male",
+            "birthDate": "2009-08-03"
+        }
+    ]
+    },
+    {
+        "familyName": "Smith",
+        "movedInDate": "2023-07-13",
+        "numFamilyMembers": 6,
+        "bishopVisited": true,
+        "individualMembers": [
+            {
+                "name": "James",
+                "gender": "Male",
+                "birthDate": "1986-05-25"
+            },
+            {
+                "name": "Ruth",
+                "gender": "Female",
+                "birthDate": "1988-11-02"
+            },
+            {
+                "name": "David",
+                "gender": "Male",
+                "birthDate": "2009-11-17"
+            },
+            {
+                "name": "Mary",
+                "gender": "Female",
+                "birthDate": "2012-02-28"
+            },
+            {
+                "name": "Alice",
+                "gender": "Female",
+                "birthDate": "2014-06-11"
+            },
+            {
+                "name": "Jane",
+                "gender": "Female",
+                "birthDate": "2015-09-28"
+            }
+        ]    
+        }
+]

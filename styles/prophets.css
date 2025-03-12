@@ -1,0 +1,32 @@
+
+body {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: darkblue;
+}
+
+h2 {
+    color: darkblue;
+}
+
+section {
+    display: inline-block;
+    max-width: 360px;
+    background-color: #eed883;
+    margin: 10px;    
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: gold;
+    height: 120px;
+    font-size: 1.2em;
+    align-content:space-around;
+}
