@@ -1,6 +1,7 @@
 
 body {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     margin: 0 auto;
     text-align: center;
     align-content: center;
