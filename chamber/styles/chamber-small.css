@@ -1,0 +1,220 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: #dcba93;
+    --background-color:#EEE8D3;
+    --accent1-color: ;
+
+    --heading-font: "BioRhyme", Arial, sans-serif;
+    --paragraph-font: "Fira Sans", Arial, sans-serif;
+
+    --nav-link-color: black;
+    --nav-hover-background-color: white;
+
+    --border: rgba(63, 57, 240, 0.996);
+   
+}
+
+.biorhyme-headings {
+    font-family: "BioRhyme", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+.fira-sans-medium {
+      font-family: "Fira Sans", serif;
+      font-weight: 500;
+      font-style: normal;
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    grid-template: auto 1fr auto / 1vw;
+    min-width: 320px;
+    width: auto;
+    height: auto; 
+    font-family: var(--paragraph-font, Arial, sans-serif);       
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+header {
+    display: flex;    
+    background-color: var(--primary-color);
+    height: auto;
+    color: #000;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem; 
+    margin-bottom: 55px;  
+}
+
+h1 {
+    display: block;
+    text-align: left;
+    padding: 2px;
+}
+
+header img {
+    align-self: center;
+    justify-self: center;
+    width: 72px;
+}
+header span {
+    display: block;
+    font-size: large;
+    font-weight: 500;
+    padding: 0px;
+    text-align: left;
+}
+
+#menu {    
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+	font-size: 3rem;
+    text-align: center;
+	font-weight:700;
+	text-decoration: none;
+	color: #000;
+}
+
+#menu::after {
+	content: "≡";
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a, .selection a {
+	display: block;
+	padding: .8rem;	
+	text-decoration: none;
+    text-align: center;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 1.5rem;
+}
+
+.navigation a:hover, .navigation a.active, .selection a:hover, .selection a.active {
+	color: black;
+	background-color: var(--nav-hover-background-color);
+    border: 1px solid var(--border);
+}
+
+.show li {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+span.show, img.show  {
+    display: none;
+}
+
+#menu.show::after {
+	content: "X";
+    font-size: smaller;
+}
+
+main {
+    display: grid;
+    grid-template: 120px auto / auto;
+    min-width: 320px;
+    width: auto;
+    align-items: center;
+    background-color: #EEE8D3; 
+    margin: 0 auto;
+}
+
+.hero img, .hero source{
+    margin: 0 auto;
+}
+
+.navigation li {
+	display: none;
+}
+
+.selection {
+    display: flex;
+}
+
+.selection li {
+    list-style-type: none;
+}
+
+h2 {
+    display: flex;
+    font-family: var(--heading-font, Arial, Helvetica, sans-serif);
+    text-align: left;
+    min-width: 300px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: block;
+    min-width: 310px;
+    max-width: 580px;
+    width: auto;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+section figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    text-align: center; 
+    text-wrap: wrap;   
+}
+
+p {
+    padding: 5px;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    background-color:var(--primary-color);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    padding: 5px;
+}
+
+footer p, footer nav {
+    display: block;
+    width: auto;
+}
+
+footer nav a{
+    padding: 10px;
+}
+
+#lastModified, footer p {
+    font-size: .9rem;
+    color: white;
+    text-align: left;
+}
