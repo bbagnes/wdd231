@@ -66,17 +66,29 @@ async function displayMembersList() {
 	document.querySelector(".directory").innerHTML = "";
 
     let members = await getMembersData();
-
-    let list = document.createElement("ul");
+    
 	members.forEach((member) => {
-		
-		let stats = document.createElement("li");
-		
-		stats.textContent = `${member.name}:  ${member.address} - ${member.phoneNumber} - ${member.websiteURL}`;
-		
-		list.appendChild(stats);		
+		let list = document.createElement("ul");
+		let memberName = document.createElement("li");
+        let memberAddress = document.createElement("li");
+        let phoneNum = document.createElement("li");
+        let url = document.createElement("li");
+				
+		memberName.innerHTML = `<strong>${member.name}</strong>`;
+        memberAddress.textContent = `${member.address}`;
+        phoneNum.textContent = `${member.phoneNumber}`;
+        url.innerHTML = `${member.websiteURL}`;
+
+        url.setAttribute()
+
+        list.appendChild(memberName);
+        list.appendChild(memberAddress);
+        list.appendChild(phoneNum);
+        list.appendChild(url);
+        
+        directory.append(list);		
 });
-    directory.append(list);
+    
 }
 
 gridLink.classList.add('active');

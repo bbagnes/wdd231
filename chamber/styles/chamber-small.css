@@ -153,24 +153,44 @@ ul .selection {
     justify-content: center;
 }
 
-.selection li {
-    list-style-type: none;    
+main nav {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+main div {
+    min-width: 300px;
+    width: auto;
+}
+
+nav .selection li {
+    display: block;
+    width: 240px;
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;    
+}
+
+ul .directory{
+    display: flex;
+    flex-direction:row;
+    margin: 0;
 }
 
 .directory li {
     list-style: none;
-    min-width: 280px;
-    width: auto;
+    width: 280px;
     text-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
 }
 
-.directory li:nth-child(even) {
+.directory ul:nth-child(even) {
 	background-color: rgb(65, 230, 175);
 }
 
-.directory li:nth-child(odd) {
+.directory ul:nth-child(odd) {
 	background-color: rgb(255, 255, 255);
 }
 

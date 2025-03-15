@@ -82,6 +82,11 @@
         text-align: center;
     }
 
+    nav .selection li {
+        display: block;
+        margin: 0;   
+    }
+
     h1 {
         font-family: var(--heading-font, Arial, Helvetica, sans-serif);
         text-align: left;
@@ -89,6 +94,12 @@
         width: 100%;
         height: 50px;
         padding: 0;
+        margin: 0;
+    }
+
+    .directory ul {
+        display: flex;
+        flex-direction:row;
         margin: 0;
     }
 
