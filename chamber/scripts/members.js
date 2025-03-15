@@ -11,7 +11,6 @@ async function getMembersData() {
     return data.members;
 }   
 
-
 function displayMembersGrid(members) {
     document.querySelector(".directory").innerHTML = "";
 
