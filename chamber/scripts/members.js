@@ -2,15 +2,15 @@ let memberURL = 'https://bbagnes.github.io/wdd231/chamber/data/members.json';
 const directory = document.querySelector('.directory');
 const gridLink = document.querySelector(".grid");
 const listLink = document.querySelector(".list");
+const members = getMembersData(); 
 
 async function getMembersData() {
     const response = await fetch(memberURL);
     const data = await response.json();
     // console.table(data.members);
-    displayMembersGrid(data.members);
-}
+    return data.members;
+}   
 
-// const members = getMembersData();    
 
 function displayMembersGrid(members) {
     document.querySelector(".directory").innerHTML = "";
@@ -44,39 +44,39 @@ function displayMembersGrid(members) {
         });
 }
 
+let clearActive  = () => {
+	gridLink.classList.remove('active');
+	listLink.classList.remove('active');
+};
 
-// gridLink.classList.add('active');
+gridLink.addEventListener("click", () => {
+	clearActive();
+    getMembersData();
+	displayMembersGrid();	
+	gridLink.classList.add('active');
+});
 
-// let clearActive  = () => {
-// 	gridLink.classList.remove('active');
-// 	listLink.classList.remove('active');
-// };
+listLink.addEventListener("click", () => {
+	clearActive();
+    getMembersData();
+    displayMembersList();		
+	listLink.classList.add('active');
+});
 
-// gridLink.addEventListener("click", () => {
-// 	clearActive();
-//     getMembersData();
-// 	displayMembersGrid();	
-// 	gridLink.classList.add('active');
-// });
+function displayMembersList(members) {
+	document.querySelector(".directory").innerHTML = "";
 
-// listLink.addEventListener("click", () => {
-// 	clearActive();
-//     getMembersData();
-//     displayMembersList();		
-// 	listLink.classList.add('active');
-// });
-
-// function displayMembersList(members) {
-// 	document.querySelector(".directory").innerHTML = "";
-
-//     let list = document.createElement("ul");
-// 	members.forEach((member) => {
+    let list = document.createElement("ul");
+	members.forEach((member) => {
 		
-// 		let stats = document.createElement("li");
+		let stats = document.createElement("li");
 		
-// 		stats.textContent = `${member.name}   ${member.address}   ${member.phoneNumber}   ${member.websiteURL}`;
+		stats.textContent = `${member.name}   ${member.address}   ${member.phoneNumber}   ${member.websiteURL}`;
 		
-// 		list.appendChild(stats);		
-// });
-//     directory.append(list);
-// }
+		list.appendChild(stats);		
+});
+    directory.append(list);
+}
+
+gridLink.classList.add('active');
+getMembersData();
