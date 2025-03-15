@@ -17,7 +17,7 @@ function displayMembersGrid(members) {
 
     members.forEach((member) => {
         let card = document.createElement("section");
-        let memberName = document.createElement('h2');
+        let memberName = document.createElement('h3');
         let memberAddress = document.createElement('p');
         let phoneNum = document.createElement('p');
         let url = document.createElement('p');
