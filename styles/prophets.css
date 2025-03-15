@@ -7,9 +7,19 @@ body {
     align-content: center;
 }
 
+header {
+    display: block;
+    width: 1fr;
+}
+
 h1 {
     font-size: 3em;
     color: darkblue;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -26,6 +36,7 @@ section {
 }
 
 footer {
+    display: block;
     background-color: gold;
     height: 120px;
     font-size: 1.2em;
