@@ -45,7 +45,7 @@ header {
     display: flex;    
     background-color: var(--primary-color);
     height: auto;
-    color: #000;
+    color: white;
     align-content: center;
     justify-content: center;
     font-size: 2rem; 
@@ -94,7 +94,7 @@ header span {
 	padding: .8rem;	
 	text-decoration: none;
     text-align: center;
-	color: black;
+	color: white;
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: 1.5rem;
@@ -174,7 +174,7 @@ nav .selection li {
 ul .directory{
     display: flex;
     flex-direction:row;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .directory li {
