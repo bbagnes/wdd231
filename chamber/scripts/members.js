@@ -79,8 +79,6 @@ async function displayMembersList() {
         phoneNum.textContent = `${member.phoneNumber}`;
         url.innerHTML = `${member.websiteURL}`;
 
-        url.setAttribute()
-
         list.appendChild(memberName);
         list.appendChild(memberAddress);
         list.appendChild(phoneNum);

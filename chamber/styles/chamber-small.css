@@ -175,12 +175,12 @@ nav .selection li {
 ul .directory{
     display: flex;
     flex-direction:row;
-    margin: 0;
+    margin: 10px auto;
 }
 
 .directory li {
     list-style: none;
-    width: 280px;
+    width: 320px;
     text-wrap: wrap;
     padding: 10px;
     margin: 0;

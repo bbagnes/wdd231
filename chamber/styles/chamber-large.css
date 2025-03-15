@@ -104,8 +104,8 @@
     }
 
     main div .directory {
-        width: 100%;
         display: flex;
+        width: 100%;      
         flex-wrap: wrap;
     }
 
