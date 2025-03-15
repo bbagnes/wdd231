@@ -147,16 +147,31 @@ main {
     margin: 0 auto;
 }
 
-.selection {
+ul .selection {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .selection li {
-    list-style-type: none;
+    list-style-type: none;    
 }
 
-.business ul:nth-child(even) {
+.directory li {
+    list-style: none;
+    min-width: 280px;
+    width: auto;
+    text-wrap: wrap;
+    padding: 5px;
+    margin: 0;
+}
+
+.directory li:nth-child(even) {
 	background-color: rgb(65, 230, 175);
+}
+
+.directory li:nth-child(odd) {
+	background-color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -174,6 +189,8 @@ div .directory  {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 section {

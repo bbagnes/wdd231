@@ -11,8 +11,10 @@ async function getMembersData() {
     return data.members;
 }   
 
-function displayMembersGrid(members) {
+async function displayMembersGrid() {
     document.querySelector(".directory").innerHTML = "";
+
+    let members = await getMembersData();
 
     members.forEach((member) => {
         let card = document.createElement("section");
@@ -50,27 +52,27 @@ let clearActive  = () => {
 
 gridLink.addEventListener("click", () => {
 	clearActive();
-    getMembersData();
 	displayMembersGrid();	
 	gridLink.classList.add('active');
 });
 
 listLink.addEventListener("click", () => {
 	clearActive();
-    getMembersData();
     displayMembersList();		
 	listLink.classList.add('active');
 });
 
-function displayMembersList(members) {
+async function displayMembersList() {
 	document.querySelector(".directory").innerHTML = "";
+
+    let members = await getMembersData();
 
     let list = document.createElement("ul");
 	members.forEach((member) => {
 		
 		let stats = document.createElement("li");
 		
-		stats.textContent = `${member.name}   ${member.address}   ${member.phoneNumber}   ${member.websiteURL}`;
+		stats.textContent = `${member.name}:  ${member.address} - ${member.phoneNumber} - ${member.websiteURL}`;
 		
 		list.appendChild(stats);		
 });
@@ -78,4 +80,4 @@ function displayMembersList(members) {
 }
 
 gridLink.classList.add('active');
-getMembersData();
+displayMembersGrid();
