@@ -82,11 +82,6 @@
         text-align: center;
     }
 
-    nav .selection li {
-        display: block;
-        margin: 0;   
-    }
-
     h1 {
         font-family: var(--heading-font, Arial, Helvetica, sans-serif);
         text-align: left;
@@ -101,6 +96,14 @@
         display: flex;
         flex-direction:row;
         margin: 0;
+    }
+
+    nav .selection {
+        margin: 0 auto;
+    }
+
+    nav .selection li {
+        margin: 20px;
     }
 
     main div .directory {

@@ -166,7 +166,6 @@ main div {
 nav .selection li {
     display: block;
     width: 240px;
-    width: auto;
     text-align: center;
     list-style-type: none;
     margin: 0 auto;    
