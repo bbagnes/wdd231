@@ -4,6 +4,7 @@
     "name": "Voldmart Superstore",
     "address": "1150 S 100 W, Logan, UT 84321",
     "phoneNumber": "(435) 555-1234",
+    "email": "VoldmartLogan@gmail.com",
     "websiteURL": "https://www.voldmart.com",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp",
     "membershipLevel": 3
@@ -12,6 +13,7 @@
     "name": "Andi's Diner",
     "address": "690 Main St, Logan, UT 84321",
     "phoneNumber": "(435) 555-2345",
+    "email": "Andisdiner@gmail.com",
     "websiteURL": "https://www.andisdiner.com",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/restaurant_icon.webp",
     "membershipLevel": 3
@@ -20,6 +22,7 @@
     "name": "Dee's Marketplace",
     "address": "555 E 1400 N, Logan, UT 84341",
     "phoneNumber": "(435) 555-3456",
+    "email": "Deemarketplace@gmail.com",
     "websiteURL": "https://www.deesmarket.com",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/shopping_cart_icon.webp",
     "membershipLevel": 3
@@ -28,6 +31,7 @@
     "name": "Chicken Fillets",
     "address": "1323 N Main St, Logan, UT 84341",
     "phoneNumber": "(435) 555-4567",
+    "email": "chickenfilletslogan@gmail.com",
     "websiteURL": "https://www.chickenfillets.com",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/restaurant_icon.webp",
     "membershipLevel": 2
@@ -36,6 +40,7 @@
     "name": "Chevy Gas Station",
     "address": "970 Main St, Logan, UT 84321",
     "phoneNumber": "(435) 555-5678",
+    "email": "chevygasinlogan@gmail.com",
     "websiteURL": "https://www.chevygas.com/logan",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/gas_station_icon.webp",
     "membershipLevel": 2
@@ -44,6 +49,7 @@
     "name": "McDowell's Restaurant",
     "address": "810 N Main St, Logan, UT 84321",
     "phoneNumber": "(435) 555-6789",
+    "email": "mcdowellslogan@hotmail.com",
     "websiteURL": "https://www.mcdowells.com",
     "image": "https://bbagnes.github.io/wdd231/chamber/images/restaurant_icon.webp",
     "membershipLevel": 1
@@ -52,6 +58,7 @@
     "name": "Dollar leaf",
     "address": " 585 Main St, Logan, UT 84321",
     "phoneNumber": "(435) 555-7890",
+    "email": "dollarleaflogan@gmail.com",
     "websiteURL": "https://www.dollarleaf.com",
     "imageName": "https://bbagnes.github.io/wdd231/chamber/images/shopping_cart_icon.webp",
     "membershipLevel": 1

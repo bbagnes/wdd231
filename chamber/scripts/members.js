@@ -1,5 +1,6 @@
 let memberURL = 'https://bbagnes.github.io/wdd231/chamber/data/members.json';
 const directory = document.querySelector('.directory');
+const businesses = document.querySelector('.businesses');
 const gridLink = document.querySelector(".grid");
 const listLink = document.querySelector(".list");
 const members = getMembersData(); 
@@ -12,7 +13,7 @@ async function getMembersData() {
 }   
 
 async function displayMembersGrid() {
-    document.querySelector(".directory").innerHTML = "";
+    directory.innerHTML = "";
 
     let members = await getMembersData();
 
@@ -45,23 +46,6 @@ async function displayMembersGrid() {
         });
 }
 
-let clearActive  = () => {
-	gridLink.classList.remove('active');
-	listLink.classList.remove('active');
-};
-
-gridLink.addEventListener("click", () => {
-	clearActive();
-	displayMembersGrid();	
-	gridLink.classList.add('active');
-});
-
-listLink.addEventListener("click", () => {
-	clearActive();
-    displayMembersList();		
-	listLink.classList.add('active');
-});
-
 async function displayMembersList() {
 	document.querySelector(".directory").innerHTML = "";
 
@@ -85,9 +69,63 @@ async function displayMembersList() {
         list.appendChild(url);
         
         directory.append(list);		
-});
-    
+});    
 }
+
+async function displaySelectMembersGrid() {
+    businesses.innerHTML = "";
+
+    let members = await getMembersData();
+
+    members.forEach((member) => {
+        let card = document.createElement("section");
+        let memberName = document.createElement('h3');
+        let memberAddress = document.createElement('p');
+        let phoneNum = document.createElement('p');
+        let memberEmail = document.createElement('p');
+        let url = document.createElement('p');
+        let icon = document.createElement('img');
+
+        memberName.textContent = `${member.name} `;
+        memberAddress.textContent = `${member.address}`;
+        memberEmail.textContent = `Email: ${member.email}`
+        phoneNum.textContent = `Phone: ${member.phoneNumber}`;
+        url.textContent = `URL: ${member.websiteURL}`
+
+        icon.setAttribute('src', member.image);
+        icon.setAttribute('alt', `Business Icon`);
+        icon.setAttribute('loading', 'lazy');
+        icon.setAttribute('width', '120');
+        icon.setAttribute('height', 'auto');
+
+        card.appendChild(memberName);
+        card.appendChild(memberAddress);
+        card.appendChild(icon);
+        card.appendChild(memberEmail);        
+        card.appendChild(phoneNum);
+        card.appendChild(url);            
+
+        businesses.append(card);
+    });
+}
+
+let clearActive  = () => {
+	gridLink.classList.remove('active');
+	listLink.classList.remove('active');
+};
+
+gridLink.addEventListener("click", () => {
+	clearActive();
+	displayMembersGrid();	
+	gridLink.classList.add('active');
+});
+
+listLink.addEventListener("click", () => {
+	clearActive();
+    displayMembersList();		
+	listLink.classList.add('active');
+});
 
 gridLink.classList.add('active');
 displayMembersGrid();
+displaySelectMembersGrid();

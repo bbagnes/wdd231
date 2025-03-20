@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigham Bagnes">
     <meta name="description" content="Logan City Chamber of Commerce Directory Page">
-    <title>Logan City Chamber of Commerce - Brigham Bagnes</title>
+    <title>Logan City Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-large.css">    
-    <meta property="og:title" content="Logan City Chamber of Commerce Page - Brigham Bagnes">
+    <meta property="og:title" content="Logan City Chamber of Commerce Page">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://bbagnes.github.io/wdd231/images/">
     <meta property="og:url" content="https://bbagnes.github.io/wdd231/chamber/directory.html">
@@ -17,7 +17,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/modified.js" defer></script>
-    <script src="scripts/" defer></script>
+    <script src="scripts/members.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
@@ -33,10 +33,10 @@
         <a id="menu" aria-label="Click to show navigation links." href="#"></a>
             <nav>
 	            <ul class="navigation">
-		            <li><a href="#" class="home" target="_self">Home</a></li>
-		            <li><a href="#" class="chamber" target="_self">Chamber</a></li>
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/index.html" class="home" target="_self">Home</a></li>
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/directory.html" class="chamber" target="_self">Chamber</a></li>
 		            <li><a href="#" class="join" target="_self">Join</a></li>
-		            <li><a href="" class="discover" target="_self">Discover</a></li>		            
+		            <li><a href="#" class="discover" target="_self">Discover</a></li>		            
 	            </ul>        
             </nav> 
     </header>
@@ -50,20 +50,20 @@
         <section class="events">
             <h2>Events</h2>
         </section>
-        <section>
-            <h2>Current Weather</h2>
-            <p> <span id="current-cond"></span></p>
+        <section class="weather">
+            <h2>Current Weather</h2>            
             <figure>
-                <img id="weather-icon" src="#" alt="Sun partially blocked by white cloud">
-            <figcaption></figcaption>
-  </figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p id="cond"></p>
         </section>
-        <section>
-            <h2>Weather Forecast</h2>
+        <section class="forecast">
+            <h2>Weather Forecast</h2>          
             
-            <div class="businesses">            
-            </div> 
         </section>
+        <section class="businesses">            
+        </section> 
     </main>    
     <footer>
         <p>Logan City Chamber of Commerce<br>73 N Main St, Logan, UT 84321<br>LoganCoC.com<br>435 555-1234</p>
