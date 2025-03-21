@@ -148,7 +148,7 @@ main {
     margin: 0 auto;
 }
 
-main .hero img, main .hero source {
+main .hero img {
     width: 100%;
     height: auto;
     margin: 0;
@@ -222,6 +222,7 @@ ul .directory{
 h2 {
     display: block;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
+    color: white;
     text-align: left;
     min-width: 300px;
     width: 100%;
