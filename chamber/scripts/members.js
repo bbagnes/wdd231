@@ -134,23 +134,23 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-// let clearActive  = () => {
-// 	gridLink.classList.remove('active');
-// 	listLink.classList.remove('active');
-// };
+let clearActive  = () => {
+	gridLink.classList.remove('active');
+	listLink.classList.remove('active');
+};
 
-// gridLink.addEventListener("click", () => {
-// 	clearActive();
-// 	displayMembersGrid();	
-// 	gridLink.classList.add('active');
-// });
+gridLink.addEventListener("click", () => {
+	clearActive();
+	displayMembersGrid();	
+	gridLink.classList.add('active');
+});
 
-// listLink.addEventListener("click", () => {
-// 	clearActive();
-//     displayMembersList();		
-// 	listLink.classList.add('active');
-// });
+listLink.addEventListener("click", () => {
+	clearActive();
+    displayMembersList();		
+	listLink.classList.add('active');
+});
 
-// gridLink.classList.add('active');
+gridLink.classList.add('active');
 displayMembersGrid();
 displaySelectMembersGrid();
