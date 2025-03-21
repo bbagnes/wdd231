@@ -149,6 +149,10 @@ main .hero img, main .hero source {
     margin: 0;
 }
 
+main picture.hero {
+    position: relative;
+}
+
 ul .selection {
     display: flex;
     align-items: center;
@@ -159,6 +163,27 @@ main nav {
     min-width: 300px;
     margin: 0 auto;
 }
+
+main ul.call {
+    position: absolute;
+    list-style: none;
+    bottom: 15px;
+    right: 15px;
+}
+
+main ul.call a {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    background-color: silver;
+    color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+} 
 
 main div {
     min-width: 300px;
@@ -233,7 +258,7 @@ section.forcast ul {
     list-style: none;
 }
 
-div .directory, section .businesses  {
+div .directory  {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -254,10 +279,18 @@ section {
     border-radius: 6px;
 }
 
-main section .selected {
+main section.selected {
     display: flex;
     flex-wrap: wrap;
-    width: 100%vw;
+    width: 100%;
+}
+
+main section.selected section.silver {
+    background-color: silver;
+}
+
+main section.selected section.gold {
+    background-color: gold;
 }
 
 section figure {

@@ -1,6 +1,6 @@
 let memberURL = 'https://bbagnes.github.io/wdd231/chamber/data/members.json';
 const directory = document.querySelector('.directory');
-const businesses = document.querySelector('.businesses');
+const selected = document.querySelector('.selected');
 const gridLink = document.querySelector(".grid");
 const listLink = document.querySelector(".list");
 const members = getMembersData(); 
@@ -47,7 +47,7 @@ async function displayMembersGrid() {
 }
 
 async function displayMembersList() {
-	document.querySelector(".directory").innerHTML = "";
+	directory.innerHTML = "";
 
     let members = await getMembersData();
     
@@ -73,55 +73,56 @@ async function displayMembersList() {
 }
 
 async function displaySelectMembersGrid() {
-    businesses.innerHTML = "";
+    selected.innerHTML = "";
 
     let members = await getMembersData();
     let displayCount = 0;
 
     do {
-    members.forEach((member) => {
-        if (member.membershipLevel == 2 || member.membershipLevel == 3) {
-            let select = Math.random() * 10;
-            if (select >= 9) { 
-                let card = document.createElement("section");
-                let memberName = document.createElement('h3');
-                let memberAddress = document.createElement('p');
-                let phoneNum = document.createElement('p');
-                let memberEmail = document.createElement('p');
-                let url = document.createElement('p');
-                let icon = document.createElement('img');
+        members.forEach((member) => {
+            if (member.membershipLevel >= 2) {
+                let select = Math.random() * 10;
+                console.log(select);
+                if (select >= 7) { 
+                    let card = document.createElement("section");
+                    let memberName = document.createElement('h3');
+                    let memberAddress = document.createElement('p');
+                    let phoneNum = document.createElement('p');
+                    let memberEmail = document.createElement('p');
+                    let url = document.createElement('p');
+                    let icon = document.createElement('img');
 
-                memberName.textContent = `${member.name} `;
-                memberAddress.textContent = `${member.address}`;
-                memberEmail.textContent = `Email: ${member.email}`
-                phoneNum.textContent = `Phone: ${member.phoneNumber}`;
-                url.textContent = `URL: ${member.websiteURL}`
+                    memberName.textContent = `${member.name} `;
+                    memberAddress.textContent = `${member.address}`;
+                    memberEmail.textContent = `Email: ${member.email}`
+                    phoneNum.textContent = `Phone: ${member.phoneNumber}`;
+                    url.textContent = `URL: ${member.websiteURL}`
 
-                icon.setAttribute('src', member.image);
-                icon.setAttribute('alt', `Business Icon`);
-                icon.setAttribute('loading', 'lazy');
-                icon.setAttribute('width', '120');
-                icon.setAttribute('height', 'auto');
-                if (member.membershipLevel == 2) {
-                    card.classList.add('silver');
+                    icon.setAttribute('src', member.image);
+                    icon.setAttribute('alt', `Business Icon`);
+                    icon.setAttribute('loading', 'lazy');
+                    icon.setAttribute('width', '120');
+                    icon.setAttribute('height', 'auto');
+                    if (member.membershipLevel == 2) {
+                        card.classList.add('silver');
+                    }
+                    else {
+                        card.classList.add('gold');
+                    }
+
+                    card.appendChild(memberName);
+                    card.appendChild(memberAddress);
+                    card.appendChild(icon);
+                    card.appendChild(memberEmail);        
+                    card.appendChild(phoneNum);
+                    card.appendChild(url);            
+
+                    selected.append(card);
+                    displayCount ++;
                 }
-                else {
-                    card.classList.add('gold');
-                }
-
-                card.appendChild(memberName);
-                card.appendChild(memberAddress);
-                card.appendChild(icon);
-                card.appendChild(memberEmail);        
-                card.appendChild(phoneNum);
-                card.appendChild(url);            
-
-                businesses.append(card);
-                displayCount ++;
             }
-        }
-    });
-    } while (displayCount < 3);
+        });
+    } while (displayCount <= 2);
 }
 
 function getRandomInt(min, max) {
@@ -130,23 +131,23 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-let clearActive  = () => {
-	gridLink.classList.remove('active');
-	listLink.classList.remove('active');
-};
+// let clearActive  = () => {
+// 	gridLink.classList.remove('active');
+// 	listLink.classList.remove('active');
+// };
 
-gridLink.addEventListener("click", () => {
-	clearActive();
-	displayMembersGrid();	
-	gridLink.classList.add('active');
-});
+// gridLink.addEventListener("click", () => {
+// 	clearActive();
+// 	displayMembersGrid();	
+// 	gridLink.classList.add('active');
+// });
 
-listLink.addEventListener("click", () => {
-	clearActive();
-    displayMembersList();		
-	listLink.classList.add('active');
-});
+// listLink.addEventListener("click", () => {
+// 	clearActive();
+//     displayMembersList();		
+// 	listLink.classList.add('active');
+// });
 
-gridLink.classList.add('active');
+// gridLink.classList.add('active');
 displayMembersGrid();
 displaySelectMembersGrid();

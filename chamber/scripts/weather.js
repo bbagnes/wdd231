@@ -86,15 +86,12 @@ function displayForecast(data) {
   let tomorrowDate = presentDate.setDate(presentDate.getDate() + 1);
   tomorrowDate = new Date(tomorrowDate);
   tomorrowDate = weekday[tomorrowDate.getDay()];
-  console.log(tomorrowDate);
   tomorrow.innerHTML = `${tomorrowDate}: <strong>${data.list[9].main.temp.toFixed(1)}&deg;F</strong>`;
   
   let dayAfterDate = presentDate.setDate(presentDate.getDate() + 1);
   dayAfterDate = new Date(dayAfterDate);
   dayAfterDate = weekday[dayAfterDate.getDay()];
-  console.log(dayAfterDate);
   dayAfter.innerHTML = `${dayAfterDate}: <strong>${data.list[17].main.temp.toFixed(1)}&deg;F</strong>`; 
   
-  console.log(tomorrowDate);
 }
   
