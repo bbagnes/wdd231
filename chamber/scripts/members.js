@@ -105,9 +105,11 @@ async function displaySelectMembersGrid() {
                     icon.setAttribute('height', 'auto');
                     if (member.membershipLevel == 2) {
                         card.classList.add('silver');
+                        memberName.setAttribute('aria-label', `Silver member ${memberName}`)
                     }
                     else {
                         card.classList.add('gold');
+                        memberName.setAttribute('aria-label', `Gold member ${memberName}`)
                     }
 
                     card.appendChild(memberName);
@@ -119,6 +121,7 @@ async function displaySelectMembersGrid() {
 
                     selected.append(card);
                     displayCount ++;
+                    members.filter(member => member.class == 'silver' || member.class == 'gold');
                 }
             }
         });

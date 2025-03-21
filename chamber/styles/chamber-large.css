@@ -112,6 +112,15 @@
         flex-wrap: wrap;
     }
 
+    main section.events {
+        width: 48%;
+    }
+    
+    main section.forecast, main section.weather {
+        min-width: 300px;
+        width: 24%;
+    }
+
     section {  
         display: inline-block;
         text-align: center;     
@@ -120,11 +129,11 @@
         margin: 10px;
     }
 
-    section.selected {
+    main section.selected {
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 }
