@@ -1,4 +1,4 @@
-import {displayMembersGrid, displayMembersList, displaySelectMembersGrid} from "./members-display.mjs";
+import {displayMembersGrid, displayMembersList} from "./members-display.mjs";
 
 const gridLink = document.querySelector(".grid");
 const listLink = document.querySelector(".list");
@@ -23,4 +23,3 @@ listLink.addEventListener("click", () => {
 
 gridLink.classList.add('active');
 displayMembersGrid();
-displaySelectMembersGrid();

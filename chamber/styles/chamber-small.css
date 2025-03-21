@@ -57,9 +57,14 @@ header picture {
 }
 
 h1 {
-    display: block;
+    font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
-    padding: 2px;
+    display: block;
+    text-align: left;    
+}
+
+main h1 {
+    padding: 12%;
 }
 
 header span {
@@ -149,10 +154,6 @@ main .hero img, main .hero source {
     margin: 0;
 }
 
-main picture.hero {
-    position: relative;
-}
-
 ul .selection {
     display: flex;
     align-items: center;
@@ -165,16 +166,14 @@ main nav {
 }
 
 main ul.call {
-    position: absolute;
+    position: relative;
     list-style: none;
-    bottom: 15px;
-    right: 15px;
 }
 
 main ul.call a {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    top: 100px;
+    right: 25px;
     width: 160px;
     text-align: center;
     text-decoration: none;
