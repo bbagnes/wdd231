@@ -76,38 +76,59 @@ async function displaySelectMembersGrid() {
     businesses.innerHTML = "";
 
     let members = await getMembersData();
+    let displayCount = 0;
 
+    do {
     members.forEach((member) => {
-        let card = document.createElement("section");
-        let memberName = document.createElement('h3');
-        let memberAddress = document.createElement('p');
-        let phoneNum = document.createElement('p');
-        let memberEmail = document.createElement('p');
-        let url = document.createElement('p');
-        let icon = document.createElement('img');
+        if (member.membershipLevel == 2 || member.membershipLevel == 3) {
+            let select = Math.random() * 10;
+            if (select >= 9) { 
+                let card = document.createElement("section");
+                let memberName = document.createElement('h3');
+                let memberAddress = document.createElement('p');
+                let phoneNum = document.createElement('p');
+                let memberEmail = document.createElement('p');
+                let url = document.createElement('p');
+                let icon = document.createElement('img');
 
-        memberName.textContent = `${member.name} `;
-        memberAddress.textContent = `${member.address}`;
-        memberEmail.textContent = `Email: ${member.email}`
-        phoneNum.textContent = `Phone: ${member.phoneNumber}`;
-        url.textContent = `URL: ${member.websiteURL}`
+                memberName.textContent = `${member.name} `;
+                memberAddress.textContent = `${member.address}`;
+                memberEmail.textContent = `Email: ${member.email}`
+                phoneNum.textContent = `Phone: ${member.phoneNumber}`;
+                url.textContent = `URL: ${member.websiteURL}`
 
-        icon.setAttribute('src', member.image);
-        icon.setAttribute('alt', `Business Icon`);
-        icon.setAttribute('loading', 'lazy');
-        icon.setAttribute('width', '120');
-        icon.setAttribute('height', 'auto');
+                icon.setAttribute('src', member.image);
+                icon.setAttribute('alt', `Business Icon`);
+                icon.setAttribute('loading', 'lazy');
+                icon.setAttribute('width', '120');
+                icon.setAttribute('height', 'auto');
+                if (member.membershipLevel == 2) {
+                    card.classList.add('silver');
+                }
+                else {
+                    card.classList.add('gold');
+                }
 
-        card.appendChild(memberName);
-        card.appendChild(memberAddress);
-        card.appendChild(icon);
-        card.appendChild(memberEmail);        
-        card.appendChild(phoneNum);
-        card.appendChild(url);            
+                card.appendChild(memberName);
+                card.appendChild(memberAddress);
+                card.appendChild(icon);
+                card.appendChild(memberEmail);        
+                card.appendChild(phoneNum);
+                card.appendChild(url);            
 
-        businesses.append(card);
+                businesses.append(card);
+                displayCount ++;
+            }
+        }
     });
+    } while (displayCount < 3);
 }
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 let clearActive  = () => {
 	gridLink.classList.remove('active');

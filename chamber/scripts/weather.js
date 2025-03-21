@@ -1,11 +1,15 @@
 const currentCond = document.querySelector('#cond');
 const weatherIcon = document.querySelector('#weather-icon');
 const futureForecast = document.querySelector('.forecast');
+const today = document.querySelector('.today');
+const tomorrow = document.querySelector('.tomorrow');
+const dayAfter = document.querySelector('.dayAfter');
 
 
 const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=41.74&lon=-111.83&units=imperial&appid=b99fc432ed06addb16967685aa3d1016';
-const forcastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.74&lon=-111.83&units=imperial&appid=b99fc432ed06addb16967685aa3d1016';
-
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.74&lon=-111.83&units=imperial&appid=b99fc432ed06addb16967685aa3d1016';
+weatherFetch();
+forecastFetch();
 
 async function weatherFetch() {
     try {
@@ -13,8 +17,8 @@ async function weatherFetch() {
 
       if (weather.ok) {
         const weatherData = await weather.json();        
-        console.log(weatherData); // testing only
-        currentCond.innerHTML = displayWeather(weatherData); // uncomment when ready        
+        // console.log(weatherData); // testing only
+        displayWeather(weatherData); // uncomment when ready        
       } else {
           throw Error(await weather.text());
       }      
@@ -25,12 +29,12 @@ async function weatherFetch() {
 
   async function forecastFetch() {
     try {
-      const forecast = await fetch(forcastURL);
+      const forecast = await fetch(forecastURL);
 
       if (forecast.ok) {
         const forecastData = await forecast.json();
-        console.log(forecastData);
-        futureForecast.innerHTML = displayForecast(forecastData);
+        // console.log(forecastData);
+        displayForecast(forecastData);
       } else {
         throw Error(await forecast.text());
       }
@@ -40,63 +44,57 @@ async function weatherFetch() {
   } 
 
 function displayWeather(data) {
-  let list = document.createElement("ul");
-  let temperature = document.createElement('li');
-  let description = document.createElement('li');
-  let high = document.createElement('li');
-  let low = document.createElement('li');
-  let humidity = document.createElement('li');
-  let sunrise = document.createElement('li');
-  let sunset = document.createElement('li');
+  
+  let temperature = document.createElement('p');
+  let description = document.createElement('p');
+  let high = document.createElement('p');
+  let low = document.createElement('p');
+  let humidity = document.createElement('p');
+  let sunrise = document.createElement('p');
+  let sunset = document.createElement('p');
 
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
-  temperature.innerHTML =  `${data.main.temp}&deg;F`;
+  temperature.innerHTML =  `${data.main.temp.toFixed(1)}&deg;F`;
   description.innerHTML = `${data.weather[0].description}`;
-  high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
-  low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
+  high.innerHTML = `High: ${data.main.temp_max.toFixed(1)}&deg;F`;
+  low.innerHTML = `Low: ${data.main.temp_min.toFixed(1)}&deg;F`;
   humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
   sunrise.innerHTML = `Sunrise: ${data.sys.sunrise}am`;
   sunset.innerHTML = `Sunset: ${data.sys.sunset}pm`;
 
-  list.appendChild(temperature);
-  list.appendChild(description);
-  list.appendChild(high);
-  list.appendChild(low);
-  list.appendChild(humidity);
-  list.appendChild(sunrise);
-  list.appendChild(sunset);
+  currentCond.appendChild(temperature);
+  currentCond.appendChild(description);
+  currentCond.appendChild(high);
+  currentCond.appendChild(low);
+  currentCond.appendChild(humidity);
+  currentCond.appendChild(sunrise);
+  currentCond.appendChild(sunset);
           
   currentCond.append(list);	
 }
 
 function displayForecast(data) {  
-  const header = document.createElement('h2');
-  const today = document.createElement('p');
-  const tomorrow = document.createElement('p');
-  const dayAfter = document.createElement('p');
-  
-  header.textContent = "Weather Forecast";
+    
   const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   let presentDate = new Date();
-  console.log(presentDate);
-  today.innerHTML = `Today: <strong> </strong>`;
-  presentDate.setDate(presentDate.getDate() + 1);
-  console.log(presentDate);
-  tomorrow.innerHTML = `${presentDate.getDay()}: <strong> </strong>`;
-  const dayAfterDate = presentDate.setDate(presentDate.getDate() + 1);
-  dayAfter.innerHTML = `${weekday[presentDate.getDay()]}: <strong> </strong>`;
   
-  console.log(presentDate);
+  today.innerHTML = `Today: <strong>${data.list[0].main.temp.toFixed(1)}&deg;F</strong>`;
+
+  let tomorrowDate = presentDate.setDate(presentDate.getDate() + 1);
+  tomorrowDate = new Date(tomorrowDate);
+  tomorrowDate = weekday[tomorrowDate.getDay()];
+  console.log(tomorrowDate);
+  tomorrow.innerHTML = `${tomorrowDate}: <strong>${data.list[9].main.temp.toFixed(1)}&deg;F</strong>`;
   
-  futureForecast.appendChild(header);
-  futureForecast.appendChild(today);
-  futureForecast.appendChild(tomorrow);
-  futureForecast.appendChild(dayAfter);
+  let dayAfterDate = presentDate.setDate(presentDate.getDate() + 1);
+  dayAfterDate = new Date(dayAfterDate);
+  dayAfterDate = weekday[dayAfterDate.getDay()];
+  console.log(dayAfterDate);
+  dayAfter.innerHTML = `${dayAfterDate}: <strong>${data.list[17].main.temp.toFixed(1)}&deg;F</strong>`; 
   
+  console.log(tomorrowDate);
 }
   
-weatherFetch();
-forecastFetch();

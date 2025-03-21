@@ -135,7 +135,7 @@ span.show, img.show  {
 
 main {
     display: grid;
-    grid-template: 120px auto / auto;
+    grid-template: auto 120px auto / auto;
     min-width: 320px;
     width: auto;
     align-items: center;
@@ -206,6 +206,33 @@ h2 {
     margin: 0;
 }
 
+section .weather {
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+    min-width: 320px;
+    width: auto;
+}
+
+section .weather figure, section .weather img {
+    grid-column: 1;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+section .weather ul {
+    grid-column: 2;
+    text-align: left;
+    list-style: none;
+}
+
+section.forcast ul {
+    text-align: left;
+    list-style: none;
+}
+
 div .directory, section .businesses  {
     display: flex;
     flex-wrap: wrap;
@@ -227,10 +254,10 @@ section {
     border-radius: 6px;
 }
 
-section .businesses {
+main section .selected {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100%vw;
 }
 
 section figure {
