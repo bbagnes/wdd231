@@ -269,7 +269,6 @@ div .directory  {
 section {
     display: block;
     min-width: 310px;
-    max-width: 580px;
     width: auto;
     height: auto;
     background-color: var(--secondary-color);
@@ -282,6 +281,7 @@ section {
 main section.selected {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
     width: 100%;
 }
 

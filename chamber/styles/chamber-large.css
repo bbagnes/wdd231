@@ -131,9 +131,10 @@
 
     main section.selected {
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        max-width: 98%;
+        width: 98%;
         height: auto;
     }
 }
