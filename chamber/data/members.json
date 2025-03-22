@@ -24,7 +24,7 @@
     "phoneNumber": "(435) 555-3456",
     "email": "Deemarketplace@gmail.com",
     "websiteURL": "https://www.deesmarket.com",
-    "image": "https://bbagnes.github.io/wdd231/chamber/images/shopping_cart_icon.webp",
+    "image": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp",
     "membershipLevel": 3
     },
     {
@@ -60,7 +60,7 @@
     "phoneNumber": "(435) 555-7890",
     "email": "dollarleaflogan@gmail.com",
     "websiteURL": "https://www.dollarleaf.com",
-    "imageName": "https://bbagnes.github.io/wdd231/chamber/images/shopping_cart_icon.webp",
+    "imageName": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp",
     "membershipLevel": 1
     }    
   ]
