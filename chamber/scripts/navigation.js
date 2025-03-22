@@ -18,8 +18,10 @@ const discoverLink = document.querySelector('.discover');
 
 
 let clearActive  = () => {
-	gridLink.classList.remove('active');
-	listLink.classList.remove('active');
+	homeLink.classList.remove('active');
+	directoryLink.classList.remove('active');
+    joinLink.classList.remove('active');
+    discoverLink.classList.remove('active');
 };
 
 homeLink.addEventListener("click", () => {
