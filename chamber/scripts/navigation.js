@@ -11,36 +11,4 @@ hambutton.addEventListener('click', () => {
     headerimg.classList.toggle('show');
 });
 
-const homeLink = document.querySelector(".home");
-const directoryLink = document.querySelector(".chamber");
-const joinLink = document.querySelector('.join');
-const discoverLink = document.querySelector('.discover');
-
-
-let clearActive  = () => {
-	homeLink.classList.remove('active');
-	directoryLink.classList.remove('active');
-    joinLink.classList.remove('active');
-    discoverLink.classList.remove('active');
-};
-
-homeLink.addEventListener("click", () => {
-	clearActive();	
-	homeLink.classList.add('active');
-});
-
-directoryLink.addEventListener("click", () => {
-	clearActive();		
-	directoryLink.classList.add('active');
-});
-
-joinLink.addEventListener("click", () => {
-	clearActive();		
-	joinLink.classList.add('active');
-});
-
-discoverLink.addEventListener("click", () => {
-	clearActive();		
-	discoverLink.classList.add('active');
-});
 
