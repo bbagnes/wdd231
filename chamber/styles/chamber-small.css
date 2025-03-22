@@ -149,6 +149,7 @@ main {
 }
 
 main .hero img {
+    max-width: 1200px;
     width: 100%;
     height: auto;
     margin: 0;
@@ -219,6 +220,7 @@ ul .directory{
 	background-color: rgb(255, 255, 255);
 }
 
+
 h2 {
     display: block;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
@@ -229,6 +231,10 @@ h2 {
     height: 50px;
     padding: 0;
     margin: 0;
+}
+
+main h2.business {
+    color: black;
 }
 
 section .weather {
