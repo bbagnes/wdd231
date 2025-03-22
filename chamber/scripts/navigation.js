@@ -22,22 +22,22 @@ let clearActive  = () => {
 	listLink.classList.remove('active');
 };
 
-homeLink.addEventListener("load", () => {
+homeLink.addEventListener("click", () => {
 	clearActive();	
 	homeLink.classList.add('active');
 });
 
-directoryLink.addEventListener("load", () => {
+directoryLink.addEventListener("click", () => {
 	clearActive();		
 	directoryLink.classList.add('active');
 });
 
-joinLink.addEventListener("load", () => {
+joinLink.addEventListener("click", () => {
 	clearActive();		
 	joinLink.classList.add('active');
 });
 
-discoverLink.addEventListener("load", () => {
+discoverLink.addEventListener("click", () => {
 	clearActive();		
 	discoverLink.classList.add('active');
 });
