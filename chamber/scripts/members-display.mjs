@@ -123,7 +123,7 @@ async function displaySelectMembersGrid() {
                 }
             }
         });
-    } while (displayCount <= 3);
+    } while (displayCount <= 2);
 }
 
 function getRandomInt(min, max) {
