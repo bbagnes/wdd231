@@ -113,10 +113,14 @@ header span {
     border: 1px solid var(--border);
 }
 
-.navigation a:hover, .navigation a.active, .selection a:hover, .selection a.active {
+.navigation a:hover, .selection a:hover, .selection a.active {
 	color: black;
 	background-color: var(--nav-hover-background-color);
     border: 1px solid var(--border);
+}
+
+.navigation a.active {
+    text-decoration: underline;
 }
 
 .navigation li {
