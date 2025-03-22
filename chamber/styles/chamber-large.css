@@ -171,6 +171,7 @@
         text-align: center;
     }
     main picture.hero img {
+        display: block;
         max-width: 1380px;
         height: auto;
         margin: 0 auto;
