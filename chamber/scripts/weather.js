@@ -50,8 +50,6 @@ function displayWeather(data) {
   let high = document.createElement('p');
   let low = document.createElement('p');
   let humidity = document.createElement('p');
-  let sunrise = document.createElement('p');
-  let sunset = document.createElement('p');
 
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   let desc = data.weather[0].description;
@@ -62,16 +60,12 @@ function displayWeather(data) {
   high.innerHTML = `High: ${data.main.temp_max.toFixed(1)}&deg;F`;
   low.innerHTML = `Low: ${data.main.temp_min.toFixed(1)}&deg;F`;
   humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
-  sunrise.innerHTML = `Sunrise: ${data.sys.sunrise}am`;
-  sunset.innerHTML = `Sunset: ${data.sys.sunset}pm`;
 
   currentCond.appendChild(temperature);
   currentCond.appendChild(description);
   currentCond.appendChild(high);
   currentCond.appendChild(low);
   currentCond.appendChild(humidity);
-  currentCond.appendChild(sunrise);
-  currentCond.appendChild(sunset);
           
   currentCond.append(list);	
 }
