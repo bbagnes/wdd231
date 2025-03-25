@@ -113,15 +113,20 @@ wddLink.addEventListener("click", () => {
 });
 
 function createCourseCard(filteredCourses) {
-	document.querySelector(".courses").innerHTML = "";
+	document.querySelector(".courses").innerHTML = `<dialog id="course-details"></dialog>`;
     let totalCredits = 0;
     let possibleCredits = 0;
     let card = document.createElement("ul");
+    let courseDetails = document.querySelector('#course-details');
 
 	filteredCourses.forEach(course => {		
-		let name = document.createElement("li");                
+		let name = document.createElement("li");
+        name.textContent = `${course.subject}\u00A0${course.number}\u00A0(Credits:\u00A0${course.credits})`;
 
-		name.textContent = `${course.subject}\u00A0${course.number}\u00A0(Credits:\u00A0${course.credits})`;
+        name.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });                
+
 		if (course.completed === true) {
 			name.classList.add('complete');
             totalCredits += course.credits;
@@ -137,4 +142,21 @@ function createCourseCard(filteredCourses) {
             total.classList.add('complete');
         }
     total.textContent = `Total Credits Earned:\u00A0${totalCredits}/${possibleCredits}`
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>${course.credits}</p>
+    <p><strong>Certificate</strong>${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>${course.technology.join(', ')}</p>`;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", ()=> {
+        courseDetails.close();    
+    });
 }

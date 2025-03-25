@@ -150,6 +150,27 @@ div.courses ul {
     border: 1px solid var(--border);
 }
 
+dialog {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 128, 128, 0.2);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 32, 32, 0.1);
+}
 
 .progress .courses .complete {
     background-color: lightgreen;
@@ -210,6 +231,11 @@ section {
 section figure {
     margin: 0;
     text-align: center;
+}
+
+section figure img {
+    opacity: 0;
+    transition: opacity 6s;
 }
 
 figcaption {
