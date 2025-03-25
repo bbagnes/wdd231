@@ -234,8 +234,18 @@ section figure {
 }
 
 section figure img {
-    opacity: 0;
-    transition: opacity 6s;
+    animation: delicate-arch 6s ease-in-out;
+    animation-iteration-count: 3;
+}
+@keyframes delicate-arch {
+    from {
+        opacity: 0;
+    } 
+
+    to {
+        opacity: 1;
+    }
+
 }
 
 figcaption {
