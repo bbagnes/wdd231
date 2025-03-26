@@ -120,12 +120,14 @@ async function displaySelectMembersGrid() {
                 selected.append(card);
                 displayCount ++;
                 let removeMember = (selectMembers.indexOf(member));
+                // console.log(removeMember);
                 selectMembers.splice(removeMember, 1);
                     
                 }
+            // console.log(selectMembers);
             }
         );
-    } while (displayCount <= 1);
+    } while (displayCount <= 2);
 }
 
 function getRandomInt(min, max) {

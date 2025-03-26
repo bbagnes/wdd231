@@ -39,6 +39,7 @@ body {
     font-size: 1.2em;
     margin: 0 auto;
     padding: 0;
+    text-wrap: wrap;
     }
 
 header {
@@ -49,10 +50,12 @@ header {
     align-content: center;
     justify-content: center;
     font-size: 2rem; 
-    margin-bottom: 0;  
+    margin-bottom: 0;
+    text-wrap: wrap;  
 }
 
 header picture {
+    float: left;
     margin: auto 10px;
 }
 
@@ -60,7 +63,7 @@ h1 {
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
     display: block;
-    text-align: left;    
+    margin-left: 5px;  
 }
 
 main h1 {
@@ -319,6 +322,7 @@ section h2 {
 }
 
 p {
+    font: .8rem;
     padding: 5px;
     margin: 0;
 }
