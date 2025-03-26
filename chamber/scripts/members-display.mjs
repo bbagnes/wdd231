@@ -81,7 +81,7 @@ async function displaySelectMembersGrid() {
         members.forEach((member) => {
             if (member.membershipLevel >= 2) {
                 let select = Math.random() * 10;
-                if (select >= 7) { 
+                if (select >= 5) { 
                     let card = document.createElement("section");
                     let memberName = document.createElement('h3');
                     let memberAddress = document.createElement('p');
