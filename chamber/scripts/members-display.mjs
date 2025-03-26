@@ -103,11 +103,11 @@ async function displaySelectMembersGrid() {
                     icon.setAttribute('height', 'auto');
                     if (member.membershipLevel == 2) {
                         card.classList.add('silver');
-                        memberName.setAttribute('aria-label', `Silver member ${memberName}`)
+                        memberName.setAttribute('aria-label', `Silver member ${member.name}`)
                     }
                     else {
                         card.classList.add('gold');
-                        memberName.setAttribute('aria-label', `Gold member ${memberName}`)
+                        memberName.setAttribute('aria-label', `Gold member ${member.name}`)
                     }
 
                     card.appendChild(memberName);
