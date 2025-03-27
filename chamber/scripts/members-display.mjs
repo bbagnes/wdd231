@@ -1,6 +1,7 @@
 let memberURL = 'https://bbagnes.github.io/wdd231/chamber/data/members.json';
 const directory = document.querySelector('.directory');
 const selected = document.querySelector('.selected');
+const levels = document.querySelector('#levels');
 
 const members = getMembersData(); 
 
@@ -136,7 +137,31 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+async function displayMembershipStats() {
+	levels.innerHTML = "";
 
+    // let members = await getMembersData();
+    
+	// members.forEach((member) => {
+		let card = document.createElement("ul");
+		let memberName = document.createElement("li");
+        let memberAddress = document.createElement("li");
+        let phoneNum = document.createElement("li");
+        let url = document.createElement("li");
+				
+		memberName.innerHTML = `<strong>${member.name}</strong>`;
+        memberAddress.textContent = `${member.address}`;
+        phoneNum.textContent = `${member.phoneNumber}`;
+        url.innerHTML = `${member.websiteURL}`;
+
+        list.appendChild(memberName);
+        list.appendChild(memberAddress);
+        list.appendChild(phoneNum);
+        list.appendChild(url);
+        
+        directory.append(list);		
+});    
+}
 
 
 
