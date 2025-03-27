@@ -45,8 +45,8 @@
             <label>Applicant's First Name <input type="text" name="first" required autocomplete="given-name" title="Applicant's First Name"></label>
               <label>Applicant's Last Name <input type="text" name="last" required autocomplete="family-name" title="Applicant's Last Name"></label>
               <label>Applicant's Organizational Title <input type="text" name="title" required pattern="^[A-Za-z\- ]{7,}$" autocomplete="organizational-title" title="Organizational Title"></label>
-              <label>Applicant's Mobile Number <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
               <label>Applicant's Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Applicant's Email" autocomplete="email"></label>
+              <label>Applicant's Mobile Number <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
               <label>Business Name<input type="text" name="business-name" required autocomplete="business-name" title="Business Name"></label>
         
       
@@ -56,8 +56,15 @@
               <label><input type="radio" name="level" value="Silver">Silver</label>
               <label><input type="radio" name="level" value="Gold">Gold</label>
            
-              <button type="submit">Join Logan City's Chamber of Commerce</button>
-          </form>       
+              <button type="submit">Apply for Membership</button>
+          </form>
+          
+          <div class="levels">
+            <h2>Membership Levels</h2>
+            <dialog id="levels">
+
+            </dialog>
+          </div>       
     </main>    
     <footer>
         <p>Logan City Chamber of Commerce<br>73 N Main St, Logan, UT 84321<br>LoganCoC.com<br>435 555-1234</p>

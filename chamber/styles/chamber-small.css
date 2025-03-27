@@ -305,8 +305,29 @@ h2 {
     margin: 0;
 }
 
-main h2.business {
+main h2.business, div.levels h2 {
     color: black;
+    font-weight: 900;
+}
+
+div.levels h2 {
+    text-align: left;
+}
+
+div.levels {
+    display: block;
+    
+    .nonprofit {
+        background-color:var(--background-color);
+    }
+
+    .silver {
+        background-color: silver;
+    }
+
+    .gold {
+        background-color: gold;
+    }
 }
 
 section .weather {
