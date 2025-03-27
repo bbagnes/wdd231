@@ -194,7 +194,7 @@ form {
     input:required:valid{border-left-color: green;}
   
     button[type=submit] {
-      width: 280px;
+      width: 260px;
       font-family: var(--paragraph-font);
       font-weight: 600;
       border: 1px solid var(--border);
@@ -210,7 +210,7 @@ form {
     }
   }
   input:-webkit-autofill{
-    -webkit-text-fill-color: #EEE;
+    -webkit-text-fill-color: black;
   }
   
   #results {
