@@ -143,9 +143,9 @@ async function displayMembershipStats() {
     // let members = await getMembersData();
     
 	// members.forEach((member) => {
-		let card = document.createElement("ul");
-		let memberName = document.createElement("li");
-        let memberAddress = document.createElement("li");
+		let card = document.createElement("section");
+		let memberType = document.createElement("p");
+        let memberDescription = document.createElement("p");
         let phoneNum = document.createElement("li");
         let url = document.createElement("li");
 				
@@ -165,4 +165,4 @@ async function displayMembershipStats() {
 
 
 
-export {displayMembersGrid, displayMembersList, displaySelectMembersGrid};
+export {displayMembersGrid, displayMembersList, displaySelectMembersGrid, displayMembershipStats};

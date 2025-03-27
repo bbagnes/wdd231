@@ -69,6 +69,7 @@ h1 {
 main {
     display: grid;
     grid-template: auto 120px auto / auto;
+    grid-gap: 10px;
     min-width: 300px;
     width: auto;
     align-items: center;
@@ -214,12 +215,18 @@ form {
   input:-webkit-autofill{
     -webkit-text-fill-color: black;
   }
+
+  h1.details {
+    margin-bottom: 180px;
+  }
   
-  #results {
+  #details {
     background-color: var(--secondary-color);
     padding: 0 1rem;
     border: 1px solid var(--border);
     border-radius: 6px;
+    margin-bottom: 180px;
+    padding: 10px;
   }
 
 main .hero img {
@@ -261,8 +268,9 @@ main ul.call a {
 } 
 
 main div {
-    min-width: 300px;
-    width: auto;
+    width: 300px;
+    height: auto;    
+    margin: 10px 0;    
 }
 
 nav .selection li {
@@ -282,6 +290,7 @@ ul .directory{
 .directory li {
     list-style: none;
     width: 300px;
+    font-size: medium;
     text-wrap: wrap;
     padding: 10px;
     margin: 0;

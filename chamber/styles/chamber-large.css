@@ -104,10 +104,6 @@
         margin: 10px;
     }
 
-    div.levels {
-
-    }
-
     main nav .selection {
         display: flex;
         column-span: all;
@@ -121,6 +117,10 @@
         margin: 0;
     }
 
+    .directory li {
+        font-size: large;       
+    }
+
     nav .selection {
         margin: 0 auto;
     }
@@ -129,7 +129,7 @@
         margin: 20px;
     }
 
-    main div .directory {
+    main div.directory {
         display: flex;
         width: 100%;      
         flex-wrap: wrap;
@@ -186,7 +186,7 @@
     }
     
     main ul.call a {
-        top: 700px;
+        top: 720px;
         right: 120px;
     }
 }
