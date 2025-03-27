@@ -7,6 +7,10 @@
         margin: 0;
     }
 
+    section {
+        margin: 10px;
+    }
+
     main ul.call a {
         top: 150px;
         right: 25px;
@@ -101,7 +105,7 @@
     }
 
     div.levels {
-        
+
     }
 
     main nav .selection {
