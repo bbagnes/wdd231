@@ -1,16 +1,15 @@
 let memberURL = 'https://bbagnes.github.io/wdd231/chamber/data/members.json';
 const directory = document.querySelector('.directory');
 const selected = document.querySelector('.selected');
-const levels = document.querySelector('#levels');
 
-const members = getMembersData(); 
+const members = getMembersData();
 
 async function getMembersData() {
     const response = await fetch(memberURL);
     const data = await response.json();
     // console.table(data.members);
     return data.members;
-}   
+}
 
 async function displayMembersGrid() {
     directory.innerHTML = "";
@@ -159,10 +158,7 @@ async function displayMembershipStats() {
         list.appendChild(phoneNum);
         list.appendChild(url);
         
-        directory.append(list);		
-};    
-
-
-
+        levels.append(card);		
+};  
 
 export {displayMembersGrid, displayMembersList, displaySelectMembersGrid, displayMembershipStats};

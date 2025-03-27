@@ -20,9 +20,10 @@
 @media only screen and (min-width: 600px) {
     main ul.call a {
         top: 200px;
-    } 
+    }
+    
+    
 }
-
 @media only screen and (min-width: 780px) {
 
     header {
@@ -87,9 +88,14 @@
 
     main {
         display: block;
-        grid-template: 100px auto auto/ auto;
+        grid-template: 100px auto auto/ auto a;
         align-items: center;
         padding: 10px;
+    }
+
+    main.join {
+        display: flex;
+        flex-direction: row;
     }
 
     main h1 {
@@ -129,10 +135,25 @@
         margin: 20px;
     }
 
-    main div.directory {
+    main.join {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    main div.directory, main div.levels {
         display: flex;
         width: 100%;      
         flex-wrap: wrap;
+    }
+
+    div.levels {
+        display: flex;
+        height: auto;
+    }
+
+    div.levels section {
+        margin: 10px;
     }
 
     main section.events {
@@ -164,6 +185,15 @@
         max-width: 98%;
         width: 98%;
         height: auto;
+    }
+    
+    h1.details {
+        margin: 10px;
+      }
+
+    div#details {
+        width: 580px;
+        margin: 10px;
     }
 }
 

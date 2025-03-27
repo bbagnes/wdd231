@@ -41,7 +41,7 @@
 	            </ul>        
             </nav> 
     </header>
-    <main>
+    <main class="join">
         <form method="GET" action="thankyou.html" class="designOne">
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
               <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Last Name"></label>
@@ -62,7 +62,27 @@
           
           <div class="levels">
             <h2>Membership Levels</h2>
-            <dialog id="levels"></dialog>
+            <section class="nonprofit">
+                <h3>Non Profit Membership Level</h3>
+                <button id="nonButton">More Info</button>
+            </section>
+            <section class="bronze">
+                <h3>Bronze Membership Level</h3>
+                <button id="bronzeButton">More Info</button>
+            </section>
+            <section class="silver">
+                <h3>Silver Membership Level</h3>
+                <button id="silverButton">More Info</button>
+            </section>
+            <section class="gold">
+                <h3>Gold Membership Level</h3>
+                <button id="goldButton">More Info</button>
+            </section>
+                        
+            <dialog id="levels">
+                <div></div>
+                <button id="closeButton">Close</button>
+            </dialog>
           </div>       
     </main>    
     <footer>
