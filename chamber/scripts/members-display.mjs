@@ -160,8 +160,8 @@ async function displayMembershipStats() {
         list.appendChild(url);
         
         directory.append(list);		
-});    
-}
+};    
+
 
 
 
