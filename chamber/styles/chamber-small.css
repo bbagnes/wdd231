@@ -164,7 +164,7 @@ form {
       color: black;
       padding-top: .2rem;
     }
-    
+
     h3 {
       font-size: 1rem;
       color: black;
@@ -194,7 +194,7 @@ form {
     input:required:valid{border-left-color: green;}
   
     button[type=submit] {
-      max-width: 280px;
+      width: 280px;
       font-family: var(--paragraph-font);
       font-weight: 600;
       border: 1px solid var(--border);
