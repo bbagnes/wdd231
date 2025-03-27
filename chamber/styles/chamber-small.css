@@ -161,9 +161,10 @@ form {
     label {
       display: block;
       font-size: .8rem;
-      color: purple;
+      color: black;
       padding-top: .2rem;
     }
+    
     h3 {
       font-size: 1rem;
       color: black;
@@ -184,15 +185,18 @@ form {
       border-left-width: 5px;
       border-left-color:#555;
       font-size: 1rem;
-      color: #3D405B;
+      color: black;
       width: 250px;
     }
   
-    input:required {border-left-color: #d70000;}
+    input:required {border-left-color: red;}
     input:focus {border-left-color: black; outline:none;}
     input:required:valid{border-left-color: green;}
   
     button[type=submit] {
+      max-width: 280px;
+      font-family: var(--paragraph-font);
+      font-weight: 600;
       border: 1px solid var(--border);
       text-align: center;
       background-color:var(--primary-color);
@@ -206,7 +210,7 @@ form {
     }
   }
   input:-webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
+    -webkit-text-fill-color: #EEE;
   }
   
   #results {
