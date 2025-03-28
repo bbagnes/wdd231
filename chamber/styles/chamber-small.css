@@ -180,7 +180,7 @@ form input[type=text],
 form input[type=tel],
 form input[type=date],
 form input[type=email],
-form input[type=textarea],
+form textarea,
 form select {
       display: block;
       margin: .1rem 0 1rem 0 ;
@@ -194,7 +194,7 @@ form select {
       width: 250px;
 }
 
-form input[type=textarea] {
+form textarea {
         height: 150px;
     }
   
