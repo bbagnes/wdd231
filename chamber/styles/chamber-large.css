@@ -154,12 +154,12 @@
         display: flex;
         grid-column: 2;
         flex-direction: column;
-        margin-top: -300px;
         margin-bottom: 0;
     }
 
     div.levels section {
         margin: 10px;
+        height: 120px;
     }
 
     main section.events {
@@ -200,6 +200,10 @@
     div#details {
         width: 580px;
         margin: 10px;
+    }
+
+    form {
+        margin-bottom: 10px;
     }
 }
 
