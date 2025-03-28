@@ -63,7 +63,7 @@ h1 {
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
     display: block;
-    margin-left: 5px;  
+    margin: 0 0 0 5px;  
 }
 
 main {
