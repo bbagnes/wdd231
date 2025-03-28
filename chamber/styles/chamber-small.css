@@ -197,7 +197,7 @@ form select {
 
 form input[type=radio] {
       margin: .1rem 0 1rem 0 ;
-      padding: .3rem;
+      padding: 22px;
       font-size: 1rem;
       color: black;
       width: 60px;
