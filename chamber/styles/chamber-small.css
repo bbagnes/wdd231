@@ -180,6 +180,7 @@ form input[type=text],
 form input[type=tel],
 form input[type=date],
 form input[type=email],
+
 form textarea,
 form select {
       display: block;
@@ -192,6 +193,14 @@ form select {
       font-size: 1rem;
       color: black;
       width: 250px;
+}
+
+form input[type=radio] {
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      font-size: 1rem;
+      color: black;
+      width: 60px;
 }
 
 form textarea {
