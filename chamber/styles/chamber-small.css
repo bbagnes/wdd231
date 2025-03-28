@@ -355,22 +355,36 @@ div.levels {
 
 div.levels .nonprofit {
         background-color: white;
+        animation-delay: 4s;
 }
 
 div.levels .bronze {
         background-color: var(--secondary-color);
+        animation-delay: 8s;
 }
 
 div.levels .silver {
         background-color: silver;
+        animation-delay: 12s;
 }
 
 div.levels .gold {
         background-color: gold;
+        animation-delay: 16s;
 }    
 
 div.levels section {
     padding-bottom: 10px;
+    animation: spin 20s ease-in-out infinite normal;
+}
+
+@keyframes spin {
+   0% {
+    transform: rotate(0deg);
+   }   
+   10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    transform: rotate(720deg);
+    }
 }
 
 #levels div {
