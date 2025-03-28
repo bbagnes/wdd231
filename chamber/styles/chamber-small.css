@@ -68,7 +68,7 @@ h1 {
 
 main {
     display: grid;
-    grid-template: auto 120px auto / auto;
+    grid-template: min-content min-content min-content / min-content;
     grid-gap: 10px;
     min-width: 300px;
     width: auto;
@@ -160,7 +160,6 @@ span.show, img.show  {
 
 form {
     margin: 2%;
-    margin-bottom: 360px;
   
     label {
       display: block;
@@ -338,7 +337,7 @@ div.levels h2 {
 
 div.levels {
     display: block;
-    height: 880px;
+    height: min-content;
     margin: 1%;
 
     .nonprofit {

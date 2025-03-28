@@ -137,8 +137,8 @@
 
     main.join {
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto;
+        grid-template-rows: min-content;
+        grid-template-columns:48% 48%;
         height: auto;
         flex-wrap: wrap;
         flex-direction: column;
