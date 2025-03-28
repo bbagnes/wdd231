@@ -136,12 +136,15 @@
     }
 
     main.join {
-        display: flex;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        height: auto;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    main div.directory, main div.levels {
+    main div.directory {
         display: flex;
         width: 100%;      
         flex-wrap: wrap;
@@ -149,7 +152,10 @@
 
     div.levels {
         display: flex;
-        height: auto;
+        grid-column: 2;
+        flex-direction: column;
+        margin-top: -300px;
+        margin-bottom: 0;
     }
 
     div.levels section {

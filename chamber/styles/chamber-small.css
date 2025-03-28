@@ -342,22 +342,19 @@ div.levels {
     margin: 1%;
 
     .nonprofit {
-        background-color:var(--background-color);
-        height: auto;
+        background-color: white;
     }
 
     .bronze {
-        height: auto;
+        background-color: var(--secondary-color);
     }
 
     .silver {
         background-color: silver;
-        height: auto;
     }
 
     .gold {
         background-color: gold;
-        height: auto;
     }    
 }
 
@@ -372,30 +369,6 @@ div.levels section {
     margin: 1%;
     text-wrap: wrap;
 }
-
-#levels div::backdrop {
-    .nonprofit {
-        background-color:var(--background-color);
-        height: auto;
-    }
-
-    .bronze {
-        background-color: var(--secondary-color);
-        height: auto;
-    }
-
-    .silver {
-        background-color: silver;
-        height: auto;
-    }
-
-    .gold {
-        background-color: gold;
-        height: auto;
-    } 
-}  
-
-
 
 section .weather {
     display: flex;
