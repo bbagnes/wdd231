@@ -160,27 +160,28 @@ span.show, img.show  {
 
 form {
     margin: 2%;
+}
   
-    label {
+form label {
       display: block;
       font-size: 1rem;
       color: black;
       padding-top: .2rem;
-    }
+}
 
-    h3 {
+form h3 {
       font-size: 1rem;
       color: black;
       margin: 1.5rem 0 .2rem 0;
       border-bottom: 1px solid #eee;
-    }
+}
   
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    input[type=textarea],
-    select {
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form input[type=textarea],
+form select {
       display: block;
       margin: .1rem 0 1rem 0 ;
       padding: .3rem;
@@ -191,17 +192,17 @@ form {
       font-size: 1rem;
       color: black;
       width: 250px;
-    }
+}
 
-    input[type=textarea] {
+form input[type=textarea] {
         height: 150px;
     }
   
-    input:required {border-left-color: red;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+form input:required {border-left-color: red;}
+form input:focus {border-left-color: black; outline:none;}
+form input:required:valid{border-left-color: green;}
   
-    button[type=submit] {
+form button[type=submit] {
       width: 260px;
       font-family: var(--paragraph-font);
       font-weight: 600;
@@ -215,8 +216,9 @@ form {
       font-size: 1.2rem;
       -webkit-appearance: none;
       appearance: none;
-    }
-  }
+}
+
+
   input:-webkit-autofill{
     -webkit-text-fill-color: black;
   }
@@ -339,23 +341,23 @@ div.levels {
     display: block;
     height: min-content;
     margin: 1%;
-
-    .nonprofit {
-        background-color: white;
-    }
-
-    .bronze {
-        background-color: var(--secondary-color);
-    }
-
-    .silver {
-        background-color: silver;
-    }
-
-    .gold {
-        background-color: gold;
-    }    
 }
+
+div.levels .nonprofit {
+        background-color: white;
+}
+
+div.levels .bronze {
+        background-color: var(--secondary-color);
+}
+
+div.levels .silver {
+        background-color: silver;
+}
+
+div.levels .gold {
+        background-color: gold;
+}    
 
 div.levels section {
     padding-bottom: 10px;

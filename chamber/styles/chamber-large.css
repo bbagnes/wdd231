@@ -154,7 +154,7 @@
         display: flex;
         grid-column: 2;
         flex-direction: column;
-        margin-bottom: 0;
+        margin-top: -180px;
     }
 
     div.levels section {
