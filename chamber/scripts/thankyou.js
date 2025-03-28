@@ -1,7 +1,7 @@
 
 const memberInfo = new URLSearchParams(window.location.search);
 const details = document.querySelector('div#details');
-// console.log(memberInfo);
+console.log(memberInfo);
 
 console.log(memberInfo.get('first'));
 console.log(memberInfo.get('last'));
@@ -10,6 +10,8 @@ console.log(memberInfo.get('email'));
 console.log(memberInfo.get('title'));
 console.log(memberInfo.get('business-name'));
 console.log(memberInfo.get('level'));
+console.log(memberInfo.get('timestamp'));
+console.log(memberInfo.get('description'));
 
 switch (memberInfo.get('level')) {
     case 'Nonprofit':

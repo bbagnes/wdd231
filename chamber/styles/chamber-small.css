@@ -164,7 +164,7 @@ form {
   
     label {
       display: block;
-      font-size: .8rem;
+      font-size: 1rem;
       color: black;
       padding-top: .2rem;
     }
@@ -180,6 +180,7 @@ form {
     input[type=tel],
     input[type=date],
     input[type=email],
+    input[type=textarea],
     select {
       display: block;
       margin: .1rem 0 1rem 0 ;
@@ -191,6 +192,10 @@ form {
       font-size: 1rem;
       color: black;
       width: 250px;
+    }
+
+    input[type=textarea] {
+        height: 150px;
     }
   
     input:required {border-left-color: red;}
@@ -362,9 +367,35 @@ div.levels section {
 
 #levels div {
     max-width: 300px;
+    height: auto;
     padding: 2%;
     margin: 1%;
+    text-wrap: wrap;
 }
+
+#levels div::backdrop {
+    .nonprofit {
+        background-color:var(--background-color);
+        height: auto;
+    }
+
+    .bronze {
+        background-color: var(--secondary-color);
+        height: auto;
+    }
+
+    .silver {
+        background-color: silver;
+        height: auto;
+    }
+
+    .gold {
+        background-color: gold;
+        height: auto;
+    } 
+}  
+
+
 
 section .weather {
     display: flex;
@@ -447,9 +478,7 @@ main section.gold {
     margin: 10px 0;
 }
 
-
-
-main section button {
+main section button, button #closeButton {
     text-align: center;
     padding: 5px;
     border-radius: 3px;
