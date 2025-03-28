@@ -88,7 +88,7 @@
 
     main {
         display: block;
-        grid-template: 100px auto auto/ auto a;
+        grid-template: 100px min-content min-content/ min-content;
         align-items: center;
         padding: 10px;
     }
