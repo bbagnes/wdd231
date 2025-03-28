@@ -35,5 +35,6 @@ details.innerHTML = `
 <p>Email: ${memberInfo.get('email')}</p>
 <p>Business Name: ${memberInfo.get('business-name')}</p>
 <p>Membership Level: ${memberInfo.get('level')}</p>
-<p>If you need to update or change your information you can contact us at anytime at: LoganCoC.gmail.com 
+<p>Processed: ${memberInfo.get('timestamp')}</p>
+<p>If you need to update or change your information you can contact us at anytime at: https://LoganCoC.gmail.com 
 `;
