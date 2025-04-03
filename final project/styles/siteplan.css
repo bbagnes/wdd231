@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+}
+
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.outfit-standard {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+:root {
+    --primary-color: #355E3B;
+    --secondary-color: #B37942;   
+    --accent1-color: #F3FFC6;
+    --font1-color: white;
+    --font2-color: black;
+
+    --heading-font: "Sriracha", Arial, sans-serif;
+    --paragraph-font: "Outfit", Arial, sans-serif;
+
+    --bord: 1px solid #0F47AF;
+}
+
+body{
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 160px 8fr 60px / 1fr;
+    max-width: 960px;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+header {
+    grid-row: 1;
+    height: min-content;
+    background-color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--font1-color);
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+main {
+    height: min-content;
+    margin: 0;
+    border: var(--bord);
+    background-color: var(--accent1-color);
+}
+
+
+h2, h3 {
+    display: block;   
+    column-span: all;
+    background-color: var(--secondary-color);
+    color: var(--font1-color);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2px;
+}
+
+header p, main p, ul, li {
+    height: max-content;
+    font-family: var(--paragraph-font);
+    background-color: var(--accent1-color);    
+    padding: 2px;
+    font-weight: 700;
+    text-align: left;
+}
+
+ul, li {
+    margin-left: 10px;
+}
+
+section, div {
+    font-family: var(--paragraph-font);
+    background-color: var(--accent1-color);
+    font-weight: 700;
+}
+
+div {
+    display: flex;    
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;    
+}
+
+img {
+    padding: 15px;
+}
+
+footer {
+    grid-row: 3;
+    background-color: var(--primary-color);
+    color: var(--font1-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: -5px;
+}
+
