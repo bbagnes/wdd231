@@ -18,17 +18,20 @@ const displayLocations = (locations) => {
             let name = document.createElement('h2');
             let address = document.createElement('address');
             let description = document.createElement('p');
-            let image = document.createElement('figure');
+            let photo = document.createElement('figure')
+            let image = document.createElement('img');
 
             name.textContent = `${location.name}`;
             address.textContent = `Address: ${location.address}`;
             description.textContent = `Description: ${location.description}`;
 
             image.setAttribute('src', location.imageurl);
-            portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-            portrait.setAttribute('loading', 'lazy');
-            portrait.setAttribute('width', '340');
-            portrait.setAttribute('height', '440');
+            image.setAttribute('alt', `Image of ${location.name}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '300');
+            image.setAttribute('height', '200');
+
+            photo.appendChild(image);
 
             card.appendChild(name);
             card.appendChild(image);

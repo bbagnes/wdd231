@@ -81,8 +81,20 @@ main h1 {
     padding: 12%;
 }
 
+.discover div {
+    justify-content: space-evenly;
+}
+
 .discover h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     color: black;
+    height: 90px;
+}
+
+.discover section {
+    height: 580px;
 }
 
 header span {
@@ -305,8 +317,13 @@ nav .selection li {
 
 ul .directory, .discover div{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin: 0 auto;
+}
+
+.discover div {
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .directory li {
