@@ -4,7 +4,7 @@ const cards = document.querySelector('.discover div');
 async function getData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.locations);
+    // console.table(data.locations);
     displayLocations(data.locations);
 }
 
