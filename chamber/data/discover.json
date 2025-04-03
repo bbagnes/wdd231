@@ -1,0 +1,53 @@
+{
+    "locations": [
+      {
+      "name": "Logan Canyon",
+      "address": "US-89, Logan, UT",
+      "description": "Beginning at the east edge of Logan, Utah; this byway provides spectacular scenery and access to great recreational areas.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/logan-canyon.webp"
+      },
+      {
+      "name": "Logan Temple",
+      "address": "175 N 300 E, Logan, UT 84321",
+      "description": "A temple of the Church of Jesus Christ of Latter-day Saints. The Logan temple was built in 1884, and is the second oldest temple in Utah.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/logan-temple.webp"
+      },
+      
+      {
+      "name": "Utah State University",
+      "address": "Old Main Hill, Logan, UT 84322",
+      "description": "Founded in 1888, Utah State is a public land-grant research university with its main campus in Logan, Utah, United States.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/utah-state.webp"
+      },
+      {
+      "name": "Aggie Ice Cream",
+      "address": "750 N 1200 E, Logan, UT 84321",
+      "description": "Nostalgic ice cream shop on Utah State University's campus serving a range of creative flavors.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/aggie-ice-cream.webp"
+      },
+      {
+        "name": "Cache County Fairgrounds",
+        "address": "490 S 500 W, Logan, UT 84321",
+        "description": "Venue hosting community events, including a fair, car shows, and demolition derbies, plus trash car races.",
+        "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/cache-fair-grounds.webp"
+      },
+      {
+      "name": "American West Heritage Center",
+      "address": "4025 S.hwy 89-91, Wellsville, UT 84339",
+      "description": "American West Heritage Center is a living history museum where pioneer life in the Old West is demonstrated through interactive exhibits & seasonal festivals",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/american-west-heritage.webp"
+      },
+      {
+      "name": "Gossner Foods",
+      "address": "1051 N 1000 W, Logan, UT 84321",
+      "description": "Gossner Foods is a family owned business with generations of cheese making experience. In addition to cheese, Gossner Foods is the pioneer in UHT (Ultra High Temperature) shelf stable milk in a variety of flavors.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/gossners.webp"
+      }, 
+      {
+      "name": "Zootah",
+      "address": "419 W 700 S, Logan, UT 84323",
+      "description": "Zootah is a public zoo in Logan, UT with over 40 different native and exotic animals on display.",
+      "imageurl": "https://bbagnes.github.io/wdd231/chamber/images/zootah.webp"
+      }    
+    ]
+  }

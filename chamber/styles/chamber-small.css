@@ -81,6 +81,10 @@ main h1 {
     padding: 12%;
 }
 
+.discover h2 {
+    color: black;
+}
+
 header span {
     display: block;
     font-size: large;
@@ -299,7 +303,7 @@ nav .selection li {
     margin: 0 auto;    
 }
 
-ul .directory{
+ul .directory, .discover div{
     display: flex;
     flex-direction:row;
     margin: 0 auto;
