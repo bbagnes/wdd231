@@ -34,7 +34,7 @@ body{
     grid-gap: 10px;
     grid-template: 160px 8fr 60px / 1fr;
     max-width: 960px;
-    padding: 2%;
+    padding: 0 2%;
     margin: 0 auto;
 }
 
