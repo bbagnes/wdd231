@@ -102,6 +102,7 @@ main h1 {
 h1 span.visits {
     color: black;
     align-self: start;
+    text-wrap: wrap;
 }
 
 h1 span {
@@ -334,7 +335,7 @@ ul .directory, .discover div{
 
 .discover section {
     padding: 0 .1rem .5rem .1rem;
-    margin: .2rem;
+    margin-bottom: .2rem;
     overflow: hidden;
     display: grid;
     grid-template-areas: 
