@@ -22,8 +22,8 @@ const displayLocations = (locations) => {
             let image = document.createElement('img');
 
             name.textContent = `${location.name}`;
-            address.textContent = `Address: ${location.address}`;
-            description.textContent = `Description: ${location.description}`;
+            address.innerHTML = `<strong>Address:</strong> ${location.address}`;
+            description.innerHTML = `<strong>Description:</strong> ${location.description}`;
 
             image.setAttribute('src', location.imageurl);
             image.setAttribute('alt', `Image of ${location.name}`);
