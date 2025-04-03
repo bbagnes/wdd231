@@ -83,18 +83,20 @@ main h1 {
 
 .discover div {
     justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 .discover h2 {
     display: flex;
     text-align: center;
     justify-content: center;
+    text-wrap: wrap;
     color: black;
     height: 90px;
 }
 
 .discover section {
-    height: 580px;
+    height: auto;
 }
 
 header span {
@@ -171,8 +173,6 @@ h1.show {
 	content: "X";
     font-size: smaller;
 }
-
-
 
 form {
     margin: 2%;
@@ -324,6 +324,46 @@ ul .directory, .discover div{
 .discover div {
     width: 100%;
     flex-wrap: wrap;
+}
+
+.discover section {
+    padding: 0 .1rem .5rem .1rem;
+    margin: .2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button"
+    ;
+}
+
+.discover section h2 {
+    grid-area: name;
+}
+
+.discover section figure {
+    grid-area: image;
+}
+
+.discover section address {
+    grid-area: address;
+    padding: .1rem;
+}
+
+.discover section p {
+    grid-area: description;
+    padding: .1rem;
+}
+
+.discover section button {
+    grid-area: button;
+    width: 80%;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .directory li {

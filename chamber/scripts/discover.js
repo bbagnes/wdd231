@@ -20,10 +20,12 @@ const displayLocations = (locations) => {
             let description = document.createElement('p');
             let photo = document.createElement('figure')
             let image = document.createElement('img');
+            let button = document.createElement('button');
 
             name.textContent = `${location.name}`;
             address.innerHTML = `<strong>Address:</strong> ${location.address}`;
             description.innerHTML = `<strong>Description:</strong> ${location.description}`;
+            button.textContent = `Learn more`;
 
             image.setAttribute('src', location.imageurl);
             image.setAttribute('alt', `Image of ${location.name}`);
@@ -37,6 +39,7 @@ const displayLocations = (locations) => {
             card.appendChild(image);
             card.appendChild(address);
             card.appendChild(description);
+            card.appendChild(button);
 
             cards.append(card);      
         });
