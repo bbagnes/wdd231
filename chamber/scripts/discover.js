@@ -8,7 +8,7 @@ async function getData() {
     displayLocations(data.locations);
 }
 
-getProphetData();
+getData();
     
 
 const displayLocations = (locations) => {
