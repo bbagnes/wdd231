@@ -99,11 +99,17 @@ main h1 {
     height: auto;
 }
 
-header span {
+h1 span.visits {
+    color: black;
+    align-self: start;
+}
+
+h1 span {
     display: block;
+    height: auto;
     font-size: large;
     font-weight: 500;
-    padding: 0px;
+    padding: 0;
     text-align: left;
 }
 
