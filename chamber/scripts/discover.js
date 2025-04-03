@@ -13,7 +13,7 @@ getData();
 
 const displayLocations = (locations) => {
         
-        prophets.forEach((location) => {
+        locations.forEach((location) => {
             let card = document.createElement("section");
             let name = document.createElement('h2');
             let address = document.createElement('address');
