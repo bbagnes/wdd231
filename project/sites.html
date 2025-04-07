@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brigham Bagnes">
+    <meta name="description" content="Logan City Chamber of Commerce Discover Page">
+    <title>Logan City Chamber of Commerce Discover Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">    
+    <meta property="og:title" content="Logan City Chamber of Commerce Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bbagnes.github.io/wdd231/images/logan-city-aerial-small.webp">
+    <meta property="og:url" content="https://bbagnes.github.io/wdd231/chamber/discover.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/visit-tracker.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/modified.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>                 
+        <h1>
+            <picture>
+                <source srcset="images/mountain_icon.png" media="(min-width:580px)">        
+                <img src="images/mountain_icon_small.png" alt="Logan City Chamber of Commerce Icon">
+            </picture>Logan City<span><br>Chamber of Commerce</span>
+        </h1>            
+        
+        <a id="menu" aria-label="Click to show navigation links." href="#"></a>
+            <nav>
+	            <ul class="navigation">
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/index.html" class="home" target="_self">Home</a></li>
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/directory.html" class="chamber" target="_self">Directory</a></li>
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/join.html" class="join" target="_self">Join</a></li>
+		            <li><a href="https://bbagnes.github.io/wdd231/chamber/discover.html" class="discover active" target="_self">Discover</a></li>		            
+	            </ul>        
+            </nav> 
+    </header>
+    <main class="discover">
+        <h1 >Discover Places of Interest<span class="visits"></span></h1>          
+        <div >            
+        </div> 
+    </main>    
+    <footer>
+        <p>Logan City Chamber of Commerce<br>73 N Main St, Logan, UT 84321<br>LoganCoC.com<br>435 555-1234</p>
+        <nav class="socialmedia">
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube_icon.webp" alt="Facebook"></a>
+            <a href="https://Twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter" width="72"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_circle.webp" alt="Linkedin"></a>
+        
+        </nav>
+        <p id="lastModified"></p>
+    </footer> 
+</body>
+</html>
