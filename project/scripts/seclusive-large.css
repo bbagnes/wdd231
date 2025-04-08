@@ -1,0 +1,215 @@
+@media only screen and (min-width: 780px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+    }
+
+    header picture {
+        display: inline-block;
+        margin: 25px;
+    }
+
+    header h1 {
+        display: inline-block;
+        font-size: 2.5em;
+    }
+
+    span.show, img.show  {
+        display: block;
+    }
+
+    header nav {
+        display: inline-block;
+        margin: auto;
+        padding: 20px;
+        align-content: end;
+        justify-content: space-around;
+    }
+
+    header a {
+        margin: 10px;
+    }
+
+    figcaption {
+        font-size: large;
+    }
+
+    span {
+        align-self: center;
+    }
+
+	.navigation {
+		display: flex;
+        justify-content: space-evenly;
+	}
+
+	.navigation li {
+		display: flex;
+		justify-content: space-evenly;
+        padding: 0;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+    main {
+        display: block;
+        grid-template: 100px min-content min-content/ min-content;
+        align-items: center;
+        padding: 10px;
+    }
+
+    main.join {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main h1 {
+        margin: 10px;
+        padding: 0;
+    }
+
+    main h2 {
+        display: block;
+        text-align: center;
+        column-span: all;
+        margin: 10px;
+    }
+
+    main nav .selection {
+        display: flex;
+        column-span: all;
+        align-items: center;
+        text-align: center;
+    }
+
+    .directory ul {
+        display: flex;
+        flex-direction:row;
+        margin: 0;
+    }
+
+    .directory li {
+        font-size: large;       
+    }
+
+    nav .selection {
+        margin: 0 auto;
+    }
+
+    nav .selection li {
+        margin: 20px;
+    }
+
+    main.join {
+        display: grid;
+        grid-template-rows: min-content;
+        grid-template-columns:48% 48%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    main div.directory {
+        display: flex;
+        width: 100%;      
+        flex-wrap: wrap;
+    }
+
+    div.levels {
+        display: flex;
+        grid-column: 2;
+        flex-direction: column;
+        margin-top: -180px;
+    }
+
+    div.levels section {
+        margin: 10px;
+        height: 120px;
+    }
+
+    main section.events {
+        width: 48%;
+    }
+    
+    main section.forecast, main section.weather {
+        min-width: 300px;
+        width: 24%;
+    }
+
+    section {  
+        display: inline-block;
+        text-align: center;     
+        width: 280px;
+        height: 420px;
+        margin: 10px;
+    }
+
+    main ul.call a {
+        top: 400px;
+        right: 25px;
+    } 
+
+    main section.selected {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 98%;
+        width: 98%;
+        height: auto;
+    }
+    
+    h1.details {
+        margin: 10px;
+      }
+
+    div#details {
+        width: 580px;
+        margin: 10px;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main ul.call a {
+        top: 560px;
+    }
+
+    .discover div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover section {
+        width: min-content;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main picture {
+        margin: 0 auto;
+        text-align: center;
+    }
+    main picture.hero img {
+        display: block;
+        max-width: 1380px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    main ul.call a {
+        top: 720px;
+        right: 120px;
+    }
+}

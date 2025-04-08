@@ -1,0 +1,595 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: #dcba93;
+    --background-color:#EEE8D3;
+    --accent1-color: ;
+
+    --heading-font: "BioRhyme", Arial, sans-serif;
+    --paragraph-font: "Fira Sans", Arial, sans-serif;
+
+    --nav-link-color: black;
+    --nav-hover-background-color: white;
+
+    --border: rgba(63, 57, 240, 0.996);
+   
+}
+
+.biorhyme-headings {
+    font-family: "BioRhyme", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+.fira-sans-medium {
+      font-family: "Fira Sans", serif;
+      font-weight: 500;
+      font-style: normal;
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    grid-template: min-content 1fr min-content / 1vw;
+    min-width: 300px;
+    width: auto;
+    height: auto; 
+    font-family: var(--paragraph-font, Arial, sans-serif);       
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0;
+    text-wrap: wrap;
+    }
+
+header {
+    display: flex;    
+    background-color: var(--primary-color);
+    height: auto;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem; 
+    margin-bottom: 0;
+    text-wrap: wrap;  
+}
+
+header picture {
+    float: left;
+    margin: auto 10px;
+}
+
+h1 {
+    font-family: var(--heading-font, Arial, Helvetica, sans-serif);
+    text-align: left;
+    display: block;
+    margin: 0 0 0 5px;  
+}
+
+main {
+    display: grid;
+    grid-template: min-content min-content min-content / min-content;
+    grid-gap: 10px;
+    min-width: 300px;
+    width: auto;
+    align-items: center;
+    background-color: #EEE8D3; 
+    margin: 0 auto;
+}
+
+main h1 {
+    padding: 12%;
+}
+
+.discover div {
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.discover h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-wrap: wrap;
+    height: 90px;
+}
+
+.discover section {
+    height: auto;
+}
+
+h1 span.visits {
+    color: black;
+    align-self: start;
+    text-wrap: wrap;
+}
+
+h1 span {
+    display: block;
+    height: auto;
+    font-size: large;
+    font-weight: 500;
+    padding: 0;
+    text-align: left;
+}
+
+#menu {    
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+	font-size: 5rem;
+    text-align: center;
+	font-weight:700;
+	text-decoration: none;
+	color: #000;
+}
+
+#menu::after {
+	content: "≡";
+}
+
+.navigation li {
+	list-style: none;
+}
+
+.navigation a, .selection a {
+	display: block;
+	padding: .8rem;	
+	text-decoration: none;
+    text-align: center;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 1.5rem;
+}
+
+.selection a {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: large;
+    margin: 5px;
+    border: 1px solid var(--border);
+}
+
+.navigation a:hover, .selection a:hover, .selection a.active {
+	color: black;
+	background-color: var(--nav-hover-background-color);
+    border: 1px solid var(--border);
+}
+
+.navigation a.active {
+    text-decoration: underline;
+}
+
+.navigation li {
+	display: none;
+}
+
+.show li {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+h1.show {
+    display: none;
+}
+
+#menu.show::after {
+	content: "X";
+    font-size: smaller;
+}
+
+form {
+    margin: 2%;
+}
+  
+form label {
+      display: block;
+      font-size: 1rem;
+      color: black;
+      padding-top: .2rem;
+}
+
+form h3 {
+      font-size: 1rem;
+      color: black;
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+}
+  
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+
+form textarea,
+form select {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: black;
+      width: 250px;
+}
+
+form input[type=radio] {
+      margin: .1rem 0 1rem 0 ;
+      padding: 22px;
+      font-size: 1rem;
+      color: black;
+      width: 60px;
+}
+
+form textarea {
+        height: 150px;
+    }
+  
+form input:required {border-left-color: red;}
+form input:focus {border-left-color: black; outline:none;}
+form input:required:valid{border-left-color: green;}
+  
+form button[type=submit] {
+      width: 260px;
+      font-family: var(--paragraph-font);
+      font-weight: 600;
+      border: 1px solid var(--border);
+      text-align: center;
+      background-color:var(--primary-color);
+      color: white;
+      border-radius: 6px;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+}
+
+
+  input:-webkit-autofill{
+    -webkit-text-fill-color: black;
+  }
+
+  h1.details {
+    margin-bottom: 200px;
+  }
+  
+  #details {
+    width: 300px;
+    background-color: var(--secondary-color);
+    padding: 0 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-wrap: wrap;
+    margin-bottom: 240px;
+    padding: 1px;
+  }
+
+main .hero img {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul .selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main nav {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+main ul.call {
+    position: relative;
+    list-style: none;
+}
+
+main ul.call a {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: gold;
+    color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+} 
+
+main div {
+    width: 300px;
+    height: auto;    
+    margin: 10px 0;    
+}
+
+nav .selection li {
+    display: block;
+    width: 240px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;    
+}
+
+ul .directory, .discover div{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.discover div {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.discover section {
+    padding: 0 .1rem .5rem .1rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button"
+    ;
+}
+
+.discover section h2 {
+    grid-area: name;
+}
+
+.discover section figure {
+    grid-area: image;
+}
+
+.discover section address {
+    grid-area: address;
+    padding: .1rem;
+}
+
+.discover section p {
+    grid-area: description;
+    padding: .1rem;
+}
+
+.discover section button {
+    grid-area: button;
+    width: 80%;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.directory li {
+    list-style: none;
+    width: 300px;
+    font-size: medium;
+    text-wrap: wrap;
+    padding: 10px;
+    margin: 0;
+}
+
+.directory ul:nth-child(even) {
+	background-color: rgb(65, 230, 175);
+}
+
+.directory ul:nth-child(odd) {
+	background-color: rgb(255, 255, 255);
+}
+
+
+h2 {
+    display: block;
+    font-family: var(--heading-font, Arial, Helvetica, sans-serif);
+    color: white;
+    text-align: left;
+    min-width: 300px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+main h2.business, div.levels h2 {
+    color: black;
+    font-weight: 900;
+}
+
+div.levels h2 {
+    display: block;
+    width: 100px;
+    text-align: left;
+}
+
+div.levels {
+    display: block;
+    height: min-content;
+    width: 300px;
+    margin: 1%;
+}
+
+div.levels .nonprofit {
+        background-color: white;
+        animation-delay: 4s;
+}
+
+div.levels .bronze {
+        background-color: var(--secondary-color);
+        animation-delay: 8s;
+}
+
+div.levels .silver {
+        background-color: silver;
+        animation-delay: 12s;
+}
+
+div.levels .gold {
+        background-color: gold;
+        animation-delay: 16s;
+}    
+
+div.levels section {
+    padding-bottom: 10px;
+    animation: spin 20s ease-in-out infinite normal;
+}
+
+@keyframes spin {
+   0% {
+    transform: scale(.8);
+   }   
+   10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    transform: scale(1);
+    }
+}
+
+#levels div {
+    max-width: 300px;
+    height: auto;
+    padding: 2%;
+    margin: 1%;
+}
+
+section .weather {
+    display: flex;
+    grid-template-columns: min-content min-content;
+    grid-row: auto;
+    min-width: 300px;
+    width: auto;
+}
+
+section .weather figure, section .weather img {
+    grid-column: 1;
+    width: 120px;
+    margin: 10px;
+    padding: 0;    
+}
+
+section .weather ul {
+    grid-column: 2;
+    text-align: left;
+    list-style: none;
+}
+
+section.forcast ul {
+    text-align: left;
+    list-style: none;
+}
+
+div .directory  {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section {
+    display: block;
+    min-width: 300px;
+    width: auto;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+main section.selected {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+}
+
+main section.nonprofit {
+    background-color: white;
+    text-align: center;
+    font-size: medium;
+    margin: 10px 0;
+}
+
+main section.bronze {
+    text-align: center;
+    font-size: medium;
+    margin: 10px 0;
+}
+
+main section.silver {
+    background-color: silver;
+    text-align: center;
+    font-size: medium;
+    margin: 10px 0;
+}
+
+main section.gold {
+    background-color: gold;
+    text-align: center;
+    font-size: medium;
+    margin: 10px 0;
+}
+
+main section button, button #closeButton {
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+section figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    text-align: center; 
+    text-wrap: wrap;   
+}
+
+p {
+    font: .8rem;
+    padding: 5px;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    background-color:var(--primary-color);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    padding: 5px;
+}
+
+footer p, footer nav {
+    display: block;
+    width: auto;
+}
+
+footer nav a{
+    padding: 10px;
+}
+
+#lastModified, footer p {
+    font-size: .9rem;
+    color: white;
+    text-align: left;
+}
