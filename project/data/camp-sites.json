@@ -7,7 +7,7 @@
     "darkSky": true,
     "avgVisitors": 92325,  
     "siteURL": "https://www.voldmart.com",
-    "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+    "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Goblin Valley State Park",
@@ -16,7 +16,7 @@
       "darkSky": true,
       "avgVisitors": 33716,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Antelope Island State Park",
@@ -25,7 +25,7 @@
       "darkSky": true,
       "avgVisitors": 77677,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Steinaker State Park",
@@ -34,7 +34,7 @@
       "darkSky": true,
       "avgVisitors": 7224,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "East Canyon State Park",
@@ -43,7 +43,7 @@
       "darkSky": true,
       "avgVisitors": 24342,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Jordanelle State Park",
@@ -52,7 +52,7 @@
       "darkSky": true,
       "avgVisitors": 96381,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Rockport State Park",
@@ -61,7 +61,7 @@
       "darkSky": true,
       "avgVisitors": 19180,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Fremont Indian State Park",
@@ -70,7 +70,7 @@
       "darkSky": true,
       "avgVisitors": 3482,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Goosenecks State Park",
@@ -79,7 +79,7 @@
       "darkSky": true,
       "avgVisitors": 5155,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Anasazi Indian Village State Park",
@@ -88,7 +88,7 @@
       "darkSky": false,
       "avgVisitors": 109,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Piute State Park",
@@ -97,7 +97,7 @@
       "darkSky": false,
       "avgVisitors": 197,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Point of the Mountain Sky Park",
@@ -106,7 +106,7 @@
       "darkSky": false,
       "avgVisitors": 296,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Camp Floyd - Stage Coach Inn State Park",
@@ -115,7 +115,7 @@
       "darkSky": false,
       "avgVisitors": 821,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Red Fleet State Park",
@@ -124,7 +124,7 @@
       "darkSky": false,
       "avgVisitors": 848,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Edge Of The Cedars State Park",
@@ -133,7 +133,7 @@
       "darkSky": false,
       "avgVisitors": 913,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Frontier State Park",
@@ -142,7 +142,7 @@
       "darkSky": false,
       "avgVisitors": 1145,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "UtahRaptor State Park",
@@ -151,7 +151,7 @@
       "darkSky": false,
       "avgVisitors": 1211,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Territorial Statehouse State Park",
@@ -160,7 +160,7 @@
       "darkSky": false,
       "avgVisitors": 1246,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Millsite State Park",
@@ -169,16 +169,16 @@
       "darkSky": false,
       "avgVisitors": 2178,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     },
     {
       "siteName": "Lost Creek State Park",
       "location": "1150 S 100 W, Logan, UT 84321",
       "recreationOptions": "",
       "darkSky": false,
-      "avgVisitors": d,  
+      "avgVisitors": 2545,  
       "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"
+      "images": ["https://bbagnes.github.io/wdd231/chamber/images/cart_icon.webp"]
     }     
   ]
 }
