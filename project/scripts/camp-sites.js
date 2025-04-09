@@ -37,7 +37,7 @@ sky.addEventListener("click", () => {
 
 uncrowded.addEventListener("click", () => {
 	clearActive();
-	displaySites(data.campSites.filter(bagi => data.campSites.avgVisitors < 3000));	
+	displaySites(data.campSites.filter(site => data.campSites.avgVisitors < 3000));	
 	uncrowded.classList.add('active');
 });
 
@@ -62,6 +62,8 @@ const displaySites = (sites) => {
             image.setAttribute('loading', 'lazy');
             image.setAttribute('width', '300');
             image.setAttribute('height', '200');
+
+            button.setAttribute('href', site.siteURL);
 
             photo.appendChild(image);
 
