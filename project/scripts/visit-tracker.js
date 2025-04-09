@@ -9,12 +9,12 @@ onload = () => {
     // console.log(daysAway);
         
     if (visitDate === 0) {
-         visit.innerHTML = `<br>Welcome! Let us know if you have any questions.`;
+         visit.innerHTML = `<br>Welcome! See our Contact Page if you have any questions.`;
         
         } else if (daysAway >= 2) {
-            visit.innerHTML = `<br>You last visited ${daysAway.toFixed(0)} days ago.`;
+            visit.innerHTML = `<br>Your last visit was ${daysAway.toFixed(0)} days ago.`;
         } else if (daysAway == 1) {
-            visit.innerHTML = `<br>You last visited ${daysAway.toFixed(0)} day ago.`;
+            visit.innerHTML = `<br>Your last visit was ${daysAway.toFixed(0)} day ago.`;
         } else if (daysAway < 1) {            
             visit.innerHTML = `<br>Back so soon! Awesome!`;
         }
