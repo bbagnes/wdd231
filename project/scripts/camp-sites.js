@@ -1,5 +1,5 @@
-const url = 'https://bbagnes.github.io/wdd231/chamber/data/discover.json';
-const cards = document.querySelector('.discover div');
+const url = 'https://bbagnes.github.io/wdd231/project/data/camp-sites.json';
+const cards = document.querySelector('.sites div');
 
 async function getData() {
     const response = await fetch(url);

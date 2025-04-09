@@ -1,31 +1,32 @@
-:root {
-    --primary-color: blue;
-    --secondary-color: #dcba93;
-    --background-color:#EEE8D3;
-    --accent1-color: ;
-
-    --heading-font: "BioRhyme", Arial, sans-serif;
-    --paragraph-font: "Fira Sans", Arial, sans-serif;
-
-    --nav-link-color: black;
-    --nav-hover-background-color: white;
-
-    --border: rgba(63, 57, 240, 0.996);
-   
+* {
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
 }
 
-.biorhyme-headings {
-    font-family: "BioRhyme", serif;
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.outfit-standard {
+    font-family: "Outfit", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-}
-  
-.fira-sans-medium {
-      font-family: "Fira Sans", serif;
-      font-weight: 500;
-      font-style: normal;
+  }
+
+:root {
+    --primary-color: #355E3B;
+    --secondary-color: #B37942;   
+    --accent1-color: #F3FFC6;
+    --font1-color: white;
+    --font2-color: black;
+
+    --heading-font: "Sriracha", Arial, sans-serif;
+    --paragraph-font: "Outfit", Arial, sans-serif;
+
+    --bord: 1px solid #0F47AF;
 }
 
 body {
@@ -514,26 +515,6 @@ main section.selected {
     width: 100%;
 }
 
-main section.nonprofit {
-    background-color: white;
-    text-align: center;
-    font-size: medium;
-    margin: 10px 0;
-}
-
-main section.bronze {
-    text-align: center;
-    font-size: medium;
-    margin: 10px 0;
-}
-
-main section.silver {
-    background-color: silver;
-    text-align: center;
-    font-size: medium;
-    margin: 10px 0;
-}
-
 main section.gold {
     background-color: gold;
     text-align: center;
@@ -560,6 +541,8 @@ section h2 {
     text-align: center; 
     text-wrap: wrap;   
 }
+
+
 
 p {
     font: .8rem;
