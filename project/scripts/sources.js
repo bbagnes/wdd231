@@ -14,30 +14,16 @@ async function getData() {
 getData();    
 
 
-const displaySources = (sites) => {
+const displaySources = (sources) => {
         
-        sites.forEach((site) => {
+        sources.forEach((source) => {
             let card = document.createElement("ul");
             let url = document.createElement('li');
 
-            name.textContent = `${site.siteName}`;
-            location.innerHTML = `<strong>Address:</strong> ${site.location}`;
-            activities.innerHTML = `<strong>Description:</strong> ${site.recreationOptions}`;
-            button.textContent = `Learn more`;
+            card.textContent = `${site.siteName}`;
+            url.textContent = `${source.siteURL}`;
 
-            image.setAttribute('src', site.images[0]);
-            image.setAttribute('alt', `Image of ${site.siteName}`);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '300');
-            image.setAttribute('height', '200');
-
-            photo.appendChild(image);
-
-            card.appendChild(name);
-            card.appendChild(image);
-            card.appendChild(address);
-            card.appendChild(description);
-            card.appendChild(button);
+            card.appendChild(url);
 
             cards.append(card);      
         });
