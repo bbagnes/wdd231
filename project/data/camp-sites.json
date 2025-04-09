@@ -25,88 +25,88 @@
       "darkSky": true,
       "avgVisitors": 77677,  
       "siteURL": "https://stateparks.utah.gov/parks/antelope-island/",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/antelope-island.webp"
     },
     {
       "siteName": "Steinaker State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Located seven miles north of the city of Vernal on US 191.",
+      "recreationOptions": "Camping, boating, swimming, OHV riding, hiking, fishing, Dark Sky",
       "darkSky": true,
       "avgVisitors": 7224,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/steinaker/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/steinaker.webp"
     },
     {
       "siteName": "East Canyon State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Located 12 miles south of the town of Morgan along S.R. 66.",
+      "recreationOptions": "Camping, boating, swimming, rock climbing, hiking, fishing, Dark Sky",
       "darkSky": true,
       "avgVisitors": 24342,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/east-canyon/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/east-canyon.webp"
     },
     {
       "siteName": "Jordanelle State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "From Salt Lake City: Take I-80 East to US 40 East, then take the Mayflower exit (#8). Turn east towards the reservoir on SR-319 which dead ends inside the park.",
+      "recreationOptions": "Camping, boating, swimming, rock climbing, hiking, pets allowed, fishing, Dark Sky",
       "darkSky": true,
       "avgVisitors": 96381,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/jordanelle/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/jordanelle.webp"
     },
     {
       "siteName": "Rockport State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": " 45 miles east of Salt Lake City. Take exit 155 from I-80 and travel five miles southeast on SR 32.",
+      "recreationOptions": "Camping, boating, swimming, hiking, fishing, Dark Sky.",
       "darkSky": true,
       "avgVisitors": 19180,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/rockport/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/rockport.webp"
     },
     {
       "siteName": "Fremont Indian State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Located 21 miles southwest of Richfield on Interstate 70. Located 17 Miles east of !-15 on Interstate 70.",
+      "recreationOptions": "Camping, museum, petroglyphs, hiking, mountain biking, Dark Sky.",
       "darkSky": true,
       "avgVisitors": 3482,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/fremont-indian/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/fremont.webp"
     },
     {
       "siteName": "Goosenecks State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "25 miles west of Bluff along US 163, west on SR 261, then southwest on SR 316.",
+      "recreationOptions": "Camping, hiking, mountain biking, OHV riding, Dark Sky.",
       "darkSky": true,
       "avgVisitors": 5155,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/goosenecks/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/goosenecks.webp"
     },
     {
       "siteName": "Anasazi Indian Village State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "In the town of Boulder, Utah.",
+      "recreationOptions": "Camping, museum, hiking, mountain biking.",
       "darkSky": false,
       "avgVisitors": 109,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/anasazi/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/anasazi.webp"
     },
     {
       "siteName": "Piute State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "12 miles south of the town of Marysvale, just off US 89.",
+      "recreationOptions": "Camping, hiking, OHV riding, boating, fishing, mountain biking.",
       "darkSky": false,
       "avgVisitors": 197,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/piute/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/piute.webp"
     },
     {
-      "siteName": "Point of the Mountain Sky Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "siteName": "Flight Park State Recreation Area",
+      "location": "From I15, take exit 288 for UT-140 towards 14600 S. Turn East. Turn right at light onto Minuteman Drive. Travel approximately 2.5 miles and turn left at Flight Park sign. The Flight park is on the left.",
+      "recreationOptions": "Camping, hiking, paragliding, and hang gliding.",
       "darkSky": false,
       "avgVisitors": 296,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/flight-park/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/flight.webp"
     },
     {
       "siteName": "Camp Floyd - Stage Coach Inn State Park",
@@ -115,7 +115,7 @@
       "darkSky": false,
       "avgVisitors": 821,  
       "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
       "siteName": "Red Fleet State Park",
@@ -124,7 +124,7 @@
       "darkSky": false,
       "avgVisitors": 848,  
       "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
       "siteName": "Edge Of The Cedars State Park",
@@ -133,7 +133,7 @@
       "darkSky": false,
       "avgVisitors": 913,  
       "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
       "siteName": "Frontier State Park",
@@ -142,7 +142,7 @@
       "darkSky": false,
       "avgVisitors": 1145,  
       "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
       "siteName": "UtahRaptor State Park",
@@ -151,7 +151,7 @@
       "darkSky": false,
       "avgVisitors": 1211,  
       "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
       "siteName": "Territorial Statehouse State Park",
