@@ -567,6 +567,12 @@ footer p, footer nav {
     width: auto;
 }
 
+.sources {
+    list-style-type: none;
+    color: white;
+    margin: 25px;
+}
+
 footer nav a{
     padding: 10px;
 }
