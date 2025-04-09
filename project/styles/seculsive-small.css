@@ -573,6 +573,15 @@ footer p, footer nav {
     margin: 25px;
 }
 
+.sources h2, .sources li {
+    text-align: left;
+    color: black;
+}
+
+.sources li {
+    margin: 10px;
+}
+
 footer nav a{
     padding: 10px;
 }

@@ -1,32 +1,29 @@
 const url = 'https://bbagnes.github.io/wdd231/project/data/camp-sites.json';
 const cards = document.querySelector('.sites div');
-let data = "";
+const seeAll = document.querySelector(".all");
+const sky = document.querySelector(".sky");
+const uncrowded = document.querySelector(".uncrowded");
+
 
 async function getData() {
     const response = await fetch(url);
-    const data = await response.json();
-    console.table(data.campSites);
+     const data = await response.json();
+    console.table(data.campSites);    
     onload = () => {
 	displaySites(data.campSites);
-	all.classList.add('active');
+	seeAll.classList.add('active');
     }
 }
 
 getData();    
 
-const all = document.querySelector(".all");
-const sky = document.querySelector(".sky");
-const uncrowded = document.querySelector(".uncrowded");
-
-
-
 let clearActive  = () => {
-	all.classList.remove('active');
+	seeAll.classList.remove('active');
 	sky.classList.remove('active');
 	uncrowded.classList.remove('active');
 };
 
-all.addEventListener("click", () => {
+seeAll.addEventListener("click", () => {
 	clearActive();
 	displaySites(data.campSites);	
 	all.classList.add('active');
@@ -34,7 +31,7 @@ all.addEventListener("click", () => {
 
 sky.addEventListener("click", () => {
 	clearActive();
-	displaySites(data.campSites.filter(site => data.campSites.darkSky === true));	
+	displaySites(data.campSites.filter(site => data.campSites.darkSky == true));	
 	sky.classList.add('active');
 });
 
@@ -56,8 +53,8 @@ const displaySites = (sites) => {
             let button = document.createElement('button');
 
             name.textContent = `${site.siteName}`;
-            location.innerHTML = `<strong>Address:</strong> ${site.location}`;
-            activities.innerHTML = `<strong>Description:</strong> ${site.recreationOptions}`;
+            location.innerHTML = `<strong>Location:</strong> ${site.location}`;
+            activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
             button.textContent = `Learn more`;
 
             image.setAttribute('src', site.images[0]);
@@ -70,8 +67,8 @@ const displaySites = (sites) => {
 
             card.appendChild(name);
             card.appendChild(image);
-            card.appendChild(address);
-            card.appendChild(description);
+            card.appendChild(location);
+            card.appendChild(activities);
             card.appendChild(button);
 
             cards.append(card);      
