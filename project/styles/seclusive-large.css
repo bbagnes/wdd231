@@ -140,11 +140,6 @@
         width: 48%;
     }
     
-    main section.forecast, main section.weather {
-        min-width: 300px;
-        width: 24%;
-    }
-
     section {  
         display: inline-block;
         text-align: center;     
@@ -179,6 +174,16 @@
     form {
         margin-bottom: 10px;
     }
+
+    .sites section {
+        text-wrap: wrap;
+        width: min-content;
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image address"
+        "image button";
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -186,12 +191,12 @@
         top: 560px;
     }
 
-    .discover div {
+    .sites div {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .discover section {
+    .sites section {
         width: min-content;
     }
 }

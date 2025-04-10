@@ -1,30 +1,27 @@
-const url = 'https://bbagnes.github.io/wdd231/project/data/camp-sites.json';
+const sourceURL = 'https://bbagnes.github.io/wdd231/project/data/camp-sites.json';
 const cards = document.querySelector('.sources div');
-let data = "";
 
 async function getData() {
-    const response = await fetch(url);
+    const response = await fetch(sourceURL);
     const data = await response.json();
     console.table(data.campSites);
-    onload = () => {
-	displaySources(data.campSites);
-    }
-}
-
-getData();    
-
+    displaySources(data.campSites);    
+} 
 
 const displaySources = (sources) => {
         
-        sources.forEach((source) => {
-            let card = document.createElement("ul");
-            let url = document.createElement('li');
+    sources.forEach((source) => {
+        let card = document.createElement("ul");
+        let sourceurl = document.createElement('li');
 
-            card.textContent = `${site.siteName}`;
-            url.textContent = `${source.siteURL}`;
+        card.innerHTML = `${source.siteName}:`;
+        sourceurl.innerHTML = `${source.siteURL}`;
 
-            card.appendChild(url);
+        card.appendChild(sourceurl);
 
-            cards.append(card);      
-        });
-      }
+        cards.append(card);      
+    });
+}
+onload = () => {
+	getData();  
+    }

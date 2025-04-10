@@ -7,16 +7,11 @@ const uncrowded = document.querySelector(".uncrowded");
 
 async function getData() {
     const response = await fetch(url);
-     const data = await response.json();
-    console.table(data.campSites);    
-    onload = () => {
-	displaySites(data.campSites);
-	seeAll.classList.add('active');    
-    }
-    return data;
-}
-
-const data = getData();    
+    const data = await response.json();
+    console.table(data.campSites);
+    displaySites(data.campSites);
+	seeAll.classList.add('active');     
+};
 
 let clearActive  = () => {
 	seeAll.classList.remove('active');
@@ -35,8 +30,6 @@ sky.addEventListener("click", () => {
 	displaySites(data.campSites.filter(site => data.campSites.darkSky == true));	
 	sky.classList.add('active');
 });
-
-
 
 uncrowded.addEventListener("click", () => {
 	clearActive();
@@ -59,8 +52,6 @@ const displaySites = (sites) => {
         location.innerHTML = `<strong>Location:</strong> ${site.location}`;
         activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
         button.textContent = `Learn more`;
-            
-        console.table(data.site.darkSky);
 
         image.setAttribute('src', site.image);
         image.setAttribute('alt', `Image of ${site.siteName}`);
@@ -80,4 +71,8 @@ const displaySites = (sites) => {
 
         cards.append(card);      
     });
+}
+
+onload = () => {
+    getData();	    
 }

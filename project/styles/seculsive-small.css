@@ -82,12 +82,12 @@ main h1 {
     padding: 12%;
 }
 
-.discover div {
+.sites div {
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
-.discover h2 {
+.sites h2 {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -95,7 +95,7 @@ main h1 {
     height: 90px;
 }
 
-.discover section {
+.sites section {
     height: auto;
 }
 
@@ -322,18 +322,18 @@ nav .selection li {
     margin: 0 auto;    
 }
 
-ul .directory, .discover div{
+ul .directory, .sites div{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
 
-.discover div {
+.sites div {
     width: 100%;
     flex-wrap: wrap;
 }
 
-.discover section {
+.sites section {
     padding: 0 .1rem .5rem .1rem;
     margin-bottom: .2rem;
     overflow: hidden;
@@ -347,25 +347,26 @@ ul .directory, .discover div{
     ;
 }
 
-.discover section h2 {
+.sites section h2 {
     grid-area: name;
 }
 
-.discover section figure {
+.sites section figure {
     grid-area: image;
 }
 
-.discover section address {
+.sites section address {
     grid-area: address;
     padding: .1rem;
 }
 
-.discover section p {
+.sites section p {
     grid-area: description;
     padding: .1rem;
+    height: auto;
 }
 
-.discover section button {
+.sites section button {
     grid-area: button;
     width: 80%;
     border-radius: 3px;
@@ -573,13 +574,19 @@ footer p, footer nav {
     margin: 25px;
 }
 
-.sources h2, .sources li {
+.sources h2, .sources ul, .sources li {
     text-align: left;
     color: black;
 }
 
+.sources ul {
+    font-size: larger;
+    font-weight: 700;
+}
+
 .sources li {
     margin: 10px;
+    font-weight: 400;
 }
 
 footer nav a{
