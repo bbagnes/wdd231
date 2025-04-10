@@ -110,75 +110,75 @@
     },
     {
       "siteName": "Camp Floyd - Stage Coach Inn State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Located in Fairfield, 22 miles southwest of Lehi on State Route 73.",
+      "recreationOptions": "Historic driving tour, museum, stage coach and wagon rides. No overnight camping.",
       "darkSky": false,
       "avgVisitors": 821,  
-      "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
+      "siteURL": "https://stateparks.utah.gov/parks/camp-floyd/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/camp-floyd.webp"
     },
     {
       "siteName": "Red Fleet State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "13 miles north of the city of Vernal on US 191.",
+      "recreationOptions": "Camping, boating, fishing, hiking, geo cache, dinosaur tracks, fossils.",
       "darkSky": false,
       "avgVisitors": 848,  
-      "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
+      "siteURL": "https://stateparks.utah.gov/parks/red-fleet/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/red-fleet.webp"
     },
     {
-      "siteName": "Edge Of The Cedars State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "siteName": "Edge Of The Cedars State Park Museum",
+      "location": "Within the Blanding city limits. Follow signs from US 191 to the park.",
+      "recreationOptions": "Camping, hiking, musuem, mountain biking, Puebloan ruins.",
       "darkSky": false,
       "avgVisitors": 913,  
-      "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
+      "siteURL": "https://stateparks.utah.gov/parks/edge-of-the-cedars/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/cedars.webp"
     },
     {
-      "siteName": "Frontier State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "siteName": "Frontier Homestead State Park Museum",
+      "location": "From I-15, take Cedar City 200 N exit (SR 56) and go east, turn north on Main St (SR 130) for a 1/2 m.",
+      "recreationOptions": "Muesum, hiking, picnic.",
       "darkSky": false,
       "avgVisitors": 1145,  
-      "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
+      "siteURL": "https://stateparks.utah.gov/parks/frontier-homestead/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/homestead.webp"
     },
     {
       "siteName": "UtahRaptor State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": " located roughly 15 miles northwest of Moab in Grand County.",
+      "recreationOptions": "Camping, hiking, OHV riding, mountain biking, fossils.",
       "darkSky": false,
       "avgVisitors": 1211,  
-      "siteURL": "https://www.voldmart.com",
-      "images": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
+      "siteURL": "https://stateparks.utah.gov/parks/utahraptor/",
+      "images": "https://bbagnes.github.io/wdd231/project/images/raptor.webp"
     },
     {
-      "siteName": "Territorial Statehouse State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "siteName": "Territorial Statehouse State Park Museum",
+      "location": "50 W. Capitol Ave. Fillmore, UT 84631",
+      "recreationOptions": "Muesum, picnic.",
       "darkSky": false,
       "avgVisitors": 1246,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/territorial-statehouse/",
+      "images": ["https://bbagnes.github.io/wdd231/project/images/statehouse.webp"]
     },
     {
       "siteName": "Millsite State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Off State Route 10 at the town of Ferron, four miles west on Ferron Canyon Road.",
+      "recreationOptions": "Camping, hiking, OHV riding, mountain biking, fishing, golfing.",
       "darkSky": false,
       "avgVisitors": 2178,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/millsite/",
+      "images": ["https://bbagnes.github.io/wdd231/project/images/millsite.webp"]
     },
     {
       "siteName": "Lost Creek State Park",
-      "location": "1150 S 100 W, Logan, UT 84321",
-      "recreationOptions": "",
+      "location": "Located about 10 miles northeast of Croydon in Morgan County.",
+      "recreationOptions": "Camping, paddling, swimming, fishing.",
       "darkSky": false,
       "avgVisitors": 2545,  
-      "siteURL": "https://www.voldmart.com",
-      "images": ["https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"]
+      "siteURL": "https://stateparks.utah.gov/parks/lost-creek/",
+      "images": ["https://bbagnes.github.io/wdd231/project/images/lost-creek.webp"]
     }     
   ]
 }
