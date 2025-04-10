@@ -57,7 +57,7 @@ const displaySites = (sites) => {
             activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
             button.textContent = `Learn more`;
 
-            image.setAttribute('src', site.images[0]);
+            image.setAttribute('src', site.image);
             image.setAttribute('alt', `Image of ${site.siteName}`);
             image.setAttribute('loading', 'lazy');
             image.setAttribute('width', '300');
