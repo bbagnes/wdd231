@@ -125,7 +125,7 @@ async function displaySites(type) {
             closeButton.textContent = "X";
             closeButton.setAttribute('id', 'closeButton');
             closeButton.addEventListener("click", () => {
-                dialogBox.close();
+                dialog.close();
             }); 
     
             name.textContent = `${site.siteName}`;
@@ -185,7 +185,7 @@ async function displaySites(type) {
             closeButton.textContent = "X";
             closeButton.setAttribute('id', 'closeButton');
             closeButton.addEventListener("click", () => {
-                dialogBox.close();
+                dialog.close();
             }); 
     
             name.textContent = `${site.siteName}`;
