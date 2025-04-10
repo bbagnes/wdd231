@@ -12,10 +12,11 @@ async function getData() {
     onload = () => {
 	displaySites(data.campSites);
 	seeAll.classList.add('active');
+    return data;
     }
 }
 
-getData();    
+const data = getData();    
 
 let clearActive  = () => {
 	seeAll.classList.remove('active');
@@ -35,6 +36,8 @@ sky.addEventListener("click", () => {
 	sky.classList.add('active');
 });
 
+
+
 uncrowded.addEventListener("click", () => {
 	clearActive();
 	displaySites(data.campSites.filter(site => data.campSites.avgVisitors < 3000));	
@@ -43,36 +46,38 @@ uncrowded.addEventListener("click", () => {
 
 const displaySites = (sites) => {
         
-        sites.forEach((site) => {
-            let card = document.createElement("section");
-            let name = document.createElement('h2');
-            let location = document.createElement('p');
-            let activities = document.createElement('p');
-            let photo = document.createElement('figure')
-            let image = document.createElement('img');
-            let button = document.createElement('button');
+    sites.forEach((site) => {
+        let card = document.createElement("section");
+        let name = document.createElement('h2');
+        let location = document.createElement('p');
+        let activities = document.createElement('p');
+        let photo = document.createElement('figure')
+        let image = document.createElement('img');
+        let button = document.createElement('button');
 
-            name.textContent = `${site.siteName}`;
-            location.innerHTML = `<strong>Location:</strong> ${site.location}`;
-            activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
-            button.textContent = `Learn more`;
+        name.textContent = `${site.siteName}`;
+        location.innerHTML = `<strong>Location:</strong> ${site.location}`;
+        activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
+        button.textContent = `Learn more`;
+            
+        console.table(data.site.darkSky);
 
-            image.setAttribute('src', site.image);
-            image.setAttribute('alt', `Image of ${site.siteName}`);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '300');
-            image.setAttribute('height', '200');
+        image.setAttribute('src', site.image);
+        image.setAttribute('alt', `Image of ${site.siteName}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '200');
 
-            button.setAttribute('href', site.siteURL);
+        button.setAttribute('href', site.siteURL);
 
-            photo.appendChild(image);
+        photo.appendChild(image);
 
-            card.appendChild(name);
-            card.appendChild(image);
-            card.appendChild(location);
-            card.appendChild(activities);
-            card.appendChild(button);
+        card.appendChild(name);
+        card.appendChild(image);
+        card.appendChild(location);
+        card.appendChild(activities);
+        card.appendChild(button);
 
-            cards.append(card);      
-        });
-      }
+        cards.append(card);      
+    });
+}

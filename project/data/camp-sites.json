@@ -160,7 +160,7 @@
       "darkSky": false,
       "avgVisitors": 1246,  
       "siteURL": "https://stateparks.utah.gov/parks/territorial-statehouse/",
-      "image": ["https://bbagnes.github.io/wdd231/project/images/statehouse.webp"]
+      "image": "https://bbagnes.github.io/wdd231/project/images/statehouse.webp"
     },
     {
       "siteName": "Millsite State Park",
@@ -169,7 +169,7 @@
       "darkSky": false,
       "avgVisitors": 2178,  
       "siteURL": "https://stateparks.utah.gov/parks/millsite/",
-      "image": ["https://bbagnes.github.io/wdd231/project/images/millsite.webp"]
+      "image": "https://bbagnes.github.io/wdd231/project/images/millsite.webp"
     },
     {
       "siteName": "Lost Creek State Park",
@@ -178,7 +178,7 @@
       "darkSky": false,
       "avgVisitors": 2545,  
       "siteURL": "https://stateparks.utah.gov/parks/lost-creek/",
-      "image": ["https://bbagnes.github.io/wdd231/project/images/lost-creek.webp"]
+      "image": "https://bbagnes.github.io/wdd231/project/images/lost-creek.webp"
     }     
   ]
 }
