@@ -177,6 +177,7 @@
 
     .sites section {
         text-wrap: wrap;
+        height: 400px;
         width: min-content;
         grid-template-areas: 
         "image name"
@@ -194,10 +195,6 @@
     .sites div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .sites section {
-        width: min-content;
     }
 }
 

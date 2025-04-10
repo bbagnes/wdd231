@@ -137,7 +137,7 @@ h1 span {
 
 .navigation a:hover, .selection a:hover, .selection a.active {
 	color: black;
-	background-color: var(--nav-hover-background-color);
+	background-color: var(--secondary-color);
     border: 1px solid var(--border);
 }
 
@@ -344,6 +344,8 @@ ul .directory, .sites div{
 
 .sites section h2 {
     grid-area: name;
+    padding: 2px;
+    text-wrap: wrap;
 }
 
 .sites section figure {

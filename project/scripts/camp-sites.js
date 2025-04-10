@@ -9,8 +9,7 @@ async function getData() {
     const response = await fetch(url);
     const data = await response.json();
     console.table(data.campSites);
-    displaySites(data.campSites);
-	seeAll.classList.add('active');     
+    displaySites(data.campSites);	    
 };
 
 let clearActive  = () => {
@@ -38,6 +37,10 @@ uncrowded.addEventListener("click", () => {
 });
 
 const displaySites = (sites) => {
+
+    cards.innerHTML = "";
+
+    getData(sites);
         
     sites.forEach((site) => {
         let card = document.createElement("section");
@@ -77,5 +80,6 @@ const displaySites = (sites) => {
 }
 
 onload = () => {
-    getData();	    
+    getData();
+    seeAll.classList.add('active'); 	    
 }

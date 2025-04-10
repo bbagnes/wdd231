@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigham Bagnes">
-    <meta name="description" content="Seclusive Utah Sites Page">
-    <title>Seclusive Utah Recreation Sites</title>
+    <meta name="description" content="Seclusive Utah Welcome Page">
+    <title>Seclusive Utah Welcome Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/seculsive-small.css">
     <link rel="stylesheet" href="styles/seclusive-large.css">    
-    <meta property="og:title" content="Seclusive Utah Sites Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bbagnes.github.io/wdd231/project/images/">
-    <meta property="og:url" content="https://bbagnes.github.io/wdd231/project/sites.html">
+    <meta property="og:title" content="Seclusive Utah Welcome Page">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bbagnes.github.io/wdd231/images/">
+    <meta property="og:url" content="https://bbagnes.github.io/wdd231/project/welcome.html">
     <meta name="twitter:card" content="summary_large_image">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/sources.js" defer></script>
     <script src="scripts/modified.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sriracha&display=swap" rel="stylesheet">    
@@ -28,36 +28,32 @@
             <picture>
                 <source srcset="images/mountain_icon.png" media="(min-width:580px)">        
                 <img src="images/mountain_icon_small.png" alt="Logan City Chamber of Commerce Icon">
-            </picture>Seclusive Utah Sites<span><br>Find a recreation site that suits your needs.</span>
-        </h1>            
-        
+            </picture>Seclusive Utah<span><br>Welcome!</span>
+        </h1>
+
         <a id="menu" aria-label="Click to show navigation links." href="#"></a>
-            <nav>
-	            <ul class="navigation">
-		            <li><a href="https://bbagnes.github.io/wdd231/project/index.html" class="home" target="_self">Home</a></li>
-		            <li><a href="https://bbagnes.github.io/wdd231/project/sites.html" class="sites active" target="_self">Sites</a></li>
-		            <li><a href="https://bbagnes.github.io/wdd231/project/contact.html" class="contact" target="_self">Contact</a></li>	            
-	            </ul>        
-            </nav> 
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://bbagnes.github.io/wdd231/project/index.html" class="home" target="_self">Home</a></li>
+                <li><a href="https://bbagnes.github.io/wdd231/project/sites.html" class="sites active" target="_self">Sites</a></li>
+                <li><a href="https://bbagnes.github.io/wdd231/project/contact.html" class="contact" target="_self">Contact</a></li>	            
+            </ul>        
+        </nav> 
     </header>
-    <main class="sources">
-        <ul><h2>Site sources:</h2>
-            <li>https://stateparks.utah.gov/parks/</li>
-        </ul>
-        <div></div>
-        <dialog id="videos">
-            <div></div>
-            <button id="closeButton">Close</button>
-        </dialog>   
+    <main>
+        <h1 class="details">Admission Details</h1>
+        <div id="details"></div>
+       
     </main>    
     <footer>
-        <p id="lastModified"></p>
+        <p>Logan City Chamber of Commerce<br>73 N Main St, Logan, UT 84321<br>LoganCoC.com<br>435 555-1234</p>
         <nav class="socialmedia">
             <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube_icon.webp" alt="Facebook"></a>
             <a href="https://Twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter" width="72"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon_circle.webp" alt="Linkedin"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_circle.webp" alt="LinkedIn"></a>
         
-        </nav>        
+        </nav>
+        <p id="lastModified"></p>
     </footer> 
 </body>
 </html>
