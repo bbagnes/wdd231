@@ -64,7 +64,7 @@ h1 {
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
     text-align: left;
     display: block;
-    margin: 0 0 0 5px;  
+    margin: 80px 0 0 5px;  
 }
 
 main {
@@ -95,6 +95,7 @@ h1 span {
     font-weight: 500;
     padding: 0;
     text-align: left;
+    margin-left: 120px;
 }
 
 #menu {    
