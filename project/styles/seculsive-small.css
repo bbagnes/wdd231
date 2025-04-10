@@ -242,16 +242,6 @@ form button[type=submit] {
     margin-bottom: 200px;
   }
   
-  #details {
-    width: 300px;
-    background-color: var(--secondary-color);
-    padding: 0 1rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    text-wrap: wrap;
-    margin-bottom: 240px;
-    padding: 1px;
-  }
 
 main .hero img {
     max-width: 1200px;
@@ -328,10 +318,11 @@ ul .directory, .sites div{
 }
 
 .sites section {
-    height: 600px;
-    padding: 0 .1rem .5rem .1rem;
+    height: max-content;
+    padding-bottom: .5rem;
     margin-bottom: .2rem;
     overflow: hidden;
+    margin: 5px auto;
     display: grid;
     grid-template-areas: 
     "name"
@@ -392,7 +383,6 @@ ul .directory, .sites div{
 	background-color: rgb(255, 255, 255);
 }
 
-
 h2 {
     display: block;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
@@ -405,50 +395,43 @@ h2 {
     margin: 0;
 }
 
-main h2.business, div.levels h2 {
+main h2.business, div.more h2 {
     color: black;
     font-weight: 900;
 }
 
-div.levels h2 {
+div.more h2 {
     display: block;
     width: 100px;
     text-align: left;
 }
 
-div.levels {
+div.more {
     display: block;
     height: min-content;
     width: 300px;
     margin: 1%;
 }
 
-div.levels .nonprofit {
-        background-color: white;
-        animation-delay: 4s;
-}
-
-div.levels .bronze {
-        background-color: var(--secondary-color);
-        animation-delay: 8s;
-}
-
-div.levels .silver {
-        background-color: silver;
-        animation-delay: 12s;
-}
-
-div.levels .gold {
-        background-color: gold;
-        animation-delay: 16s;
-}    
-
-div.levels section {
+div.more section {
     padding-bottom: 10px;
     animation: spin 20s ease-in-out infinite normal;
 }
 
-@keyframes spin {
+a.button {
+    text-decoration: none;
+    font-weight: 600;
+    width: 180px;
+    background-color: var(--accent1-color);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    animation: resize 10s infinite;
+    border: var(--bord);
+    margin: 0 auto;
+}
+
+@keyframes resize {
    0% {
     transform: scale(.8);
    }   
@@ -457,11 +440,16 @@ div.levels section {
     }
 }
 
-#levels div {
-    max-width: 300px;
+dialog {
+    min-width: 300px;
+    margin: 300px auto;
+}
+
+#more div {
+    width: 300px;
     height: auto;
     padding: 2%;
-    margin: 1%;
+    margin: 10px;
 }
 
 section .weather {

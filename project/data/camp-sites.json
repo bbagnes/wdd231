@@ -7,6 +7,7 @@
     "darkSky": true,
     "avgVisitors": 92325,  
     "siteURL": "https://stateparks.utah.gov/parks/dead-horse/",
+    "videoURL": "",
     "image": "https://bbagnes.github.io/wdd231/project/images/dead-horse.webp"
     },
     {
@@ -16,6 +17,7 @@
       "darkSky": true,
       "avgVisitors": 33716,  
       "siteURL": "https://stateparks.utah.gov/parks/goblin-valley/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/goblin-valley.webp"
     },
     {
@@ -25,6 +27,7 @@
       "darkSky": true,
       "avgVisitors": 77677,  
       "siteURL": "https://stateparks.utah.gov/parks/antelope-island/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/antelope-island.webp"
     },
     {
@@ -34,6 +37,7 @@
       "darkSky": true,
       "avgVisitors": 7224,  
       "siteURL": "https://stateparks.utah.gov/parks/steinaker/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/steinaker.webp"
     },
     {
@@ -43,6 +47,7 @@
       "darkSky": true,
       "avgVisitors": 24342,  
       "siteURL": "https://stateparks.utah.gov/parks/east-canyon/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/east-canyon.webp"
     },
     {
@@ -52,6 +57,7 @@
       "darkSky": true,
       "avgVisitors": 96381,  
       "siteURL": "https://stateparks.utah.gov/parks/jordanelle/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/jordanelle.webp"
     },
     {
@@ -61,6 +67,7 @@
       "darkSky": true,
       "avgVisitors": 19180,  
       "siteURL": "https://stateparks.utah.gov/parks/rockport/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/rockport.webp"
     },
     {
@@ -70,6 +77,7 @@
       "darkSky": true,
       "avgVisitors": 3482,  
       "siteURL": "https://stateparks.utah.gov/parks/fremont-indian/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/fremont.webp"
     },
     {
@@ -79,6 +87,7 @@
       "darkSky": true,
       "avgVisitors": 5155,  
       "siteURL": "https://stateparks.utah.gov/parks/goosenecks/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/goosenecks.webp"
     },
     {
@@ -88,6 +97,7 @@
       "darkSky": false,
       "avgVisitors": 109,  
       "siteURL": "https://stateparks.utah.gov/parks/anasazi/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/anasazi.webp"
     },
     {
@@ -97,6 +107,7 @@
       "darkSky": false,
       "avgVisitors": 197,  
       "siteURL": "https://stateparks.utah.gov/parks/piute/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/piute.webp"
     },
     {
@@ -106,6 +117,7 @@
       "darkSky": false,
       "avgVisitors": 296,  
       "siteURL": "https://stateparks.utah.gov/parks/flight-park/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/flight.webp"
     },
     {
@@ -115,6 +127,7 @@
       "darkSky": false,
       "avgVisitors": 821,  
       "siteURL": "https://stateparks.utah.gov/parks/camp-floyd/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/camp-floyd.webp"
     },
     {
@@ -124,6 +137,7 @@
       "darkSky": false,
       "avgVisitors": 848,  
       "siteURL": "https://stateparks.utah.gov/parks/red-fleet/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/red-fleet.webp"
     },
     {
@@ -133,6 +147,7 @@
       "darkSky": false,
       "avgVisitors": 913,  
       "siteURL": "https://stateparks.utah.gov/parks/edge-of-the-cedars/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/cedars.webp"
     },
     {
@@ -142,6 +157,7 @@
       "darkSky": false,
       "avgVisitors": 1145,  
       "siteURL": "https://stateparks.utah.gov/parks/frontier-homestead/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/homestead.webp"
     },
     {
@@ -151,6 +167,7 @@
       "darkSky": false,
       "avgVisitors": 1211,  
       "siteURL": "https://stateparks.utah.gov/parks/utahraptor/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/raptor.webp"
     },
     {
@@ -160,6 +177,7 @@
       "darkSky": false,
       "avgVisitors": 1246,  
       "siteURL": "https://stateparks.utah.gov/parks/territorial-statehouse/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/statehouse.webp"
     },
     {
@@ -169,6 +187,7 @@
       "darkSky": false,
       "avgVisitors": 2178,  
       "siteURL": "https://stateparks.utah.gov/parks/millsite/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/millsite.webp"
     },
     {
@@ -178,6 +197,7 @@
       "darkSky": false,
       "avgVisitors": 2545,  
       "siteURL": "https://stateparks.utah.gov/parks/lost-creek/",
+      "videoURL": "",
       "image": "https://bbagnes.github.io/wdd231/project/images/lost-creek.webp"
     }     
   ]

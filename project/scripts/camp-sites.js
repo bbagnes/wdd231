@@ -9,7 +9,7 @@ async function getData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.campSites);
-    return data.campsites;	    
+    return data.campSites;	    
 };
 
 let clearActive  = () => {
@@ -20,71 +20,211 @@ let clearActive  = () => {
 
 seeAll.addEventListener("click", () => {
 	clearActive();
-    let allData = getData();
-    console.table(allData);
-	displaySites(allData);	
-	all.classList.add('active');
+    seeAll.classList.add('active');
+	displaySites("");	
 });
 
 sky.addEventListener("click", () => {
 	clearActive();
-    let allData = getData();
-    console.table(allData);
-	displaySites(allData.filter(site => data.campSites.darkSky == true));	
-	sky.classList.add('active');
+    sky.classList.add('active');
+    displaySites("sky");
 });
 
 uncrowded.addEventListener("click", () => {
-	clearActive();
-    let allData = getData();
-    console.table(allData);
-	displaySites(allData.filter(site => allData.avgVisitors < 3000));	
+	clearActive();   
 	uncrowded.classList.add('active');
+    displaySites("uncrowded");
 });
 
-const displaySites = (sites) => {
+async function displaySites(type) {
 
     cards.innerHTML = "";
-    console.table(sites);
-        
-    sites.forEach((site) => {
-        let card = document.createElement("section");
-        let name = document.createElement('h2');
-        let location = document.createElement('p');
-        let activities = document.createElement('p');
-        let photo = document.createElement('figure')
-        let image = document.createElement('img');
-        let button = document.createElement('button');
+    let allData = await getData(type);
+    console.table(allData);
 
-        location.classList.add('location');
-        activities.classList.add('activities');
+    if (type == "sky") {
+        let filteredData = allData.filter(data => data.darkSky === true);
+        console.table(filteredData);
+        filteredData.forEach((site) => {
+            let card = document.createElement("section");
+            let name = document.createElement('h2');
+            let location = document.createElement('p');
+            let activities = document.createElement('p');
+            let photo = document.createElement('figure')
+            let image = document.createElement('img');
+            let more = document.createElement('a');
+            let dialog = document.createElement('dialog');
+            let div = document.createElement('div');
+            let closeButton = document.createElement('button');
+            let dialogBoxText = document.querySelector('#more div');
+    
+            location.classList.add('location');
+            activities.classList.add('activities');
+            dialog.setAttribute('id', 'more');         
+            
+            closeButton.textContent = "X";
+            closeButton.setAttribute('id', 'closeButton');
+            closeButton.addEventListener("click", () => {
+                dialogBox.close();
+            }); 
+    
+            name.textContent = `${site.siteName}`;
+            location.innerHTML = `<strong>Location:</strong> ${site.location}`;
+            activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
+            
+            more.setAttribute('href', site.siteURL);
+            more.setAttribute('target', '_blank');
+            more.classList.add('button');
+            more.textContent = `Learn more`;                       
+    
+            image.setAttribute('src', site.image);
+            image.setAttribute('alt', `Image of ${site.siteName}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '300');
+            image.setAttribute('height', '200');
+            image.addEventListener("click", () => {
+                dialog.showModal();
+                dialogBoxText.innerHTML = `${site.videoURL}`;
+            });  
+            
+            photo.appendChild(image);
 
-        name.textContent = `${site.siteName}`;
-        location.innerHTML = `<strong>Location:</strong> ${site.location}`;
-        activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
-        button.textContent = `Learn more`;
+            dialog.appendChild(div);
+            dialog.appendChild(closeButton);            
+    
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(location);
+            card.appendChild(activities);
+            card.appendChild(more);
+            card.appendChild(dialog);
+    
+            cards.append(card);     
+        });
 
-        image.setAttribute('src', site.image);
-        image.setAttribute('alt', `Image of ${site.siteName}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '300');
-        image.setAttribute('height', '200');
+    } else if (type == "uncrowded") {
+        let filteredData = allData.filter(data => data.avgVisitors < 3000);
+        console.table(filteredData);
+        filteredData.forEach((site) => {
+            let card = document.createElement("section");
+            let name = document.createElement('h2');
+            let location = document.createElement('p');
+            let activities = document.createElement('p');
+            let photo = document.createElement('figure')
+            let image = document.createElement('img');
+            let more = document.createElement('a');
+            let dialog = document.createElement('dialog');
+            let div = document.createElement('div');
+            let closeButton = document.createElement('button');
+            let dialogBoxText = document.querySelector('#more div');
+    
+            location.classList.add('location');
+            activities.classList.add('activities');
+            dialog.setAttribute('id', 'more');         
+            
+            closeButton.textContent = "X";
+            closeButton.setAttribute('id', 'closeButton');
+            closeButton.addEventListener("click", () => {
+                dialogBox.close();
+            }); 
+    
+            name.textContent = `${site.siteName}`;
+            location.innerHTML = `<strong>Location:</strong> ${site.location}`;
+            activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
+            
+            more.setAttribute('href', site.siteURL);
+            more.setAttribute('target', '_blank');
+            more.classList.add('button');
+            more.textContent = `Learn more`;                       
+    
+            image.setAttribute('src', site.image);
+            image.setAttribute('alt', `Image of ${site.siteName}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '300');
+            image.setAttribute('height', '200');
+            image.addEventListener("click", () => {
+                dialog.showModal();
+                dialogBoxText.innerHTML = `${site.videoURL}`;
+            });  
+            
+            photo.appendChild(image);
 
-        button.setAttribute('href', site.siteURL);
+            dialog.appendChild(div);
+            dialog.appendChild(closeButton);            
+    
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(location);
+            card.appendChild(activities);
+            card.appendChild(more);
+            card.appendChild(dialog);
+    
+            cards.append(card);      
+        });
 
-        photo.appendChild(image);
+    } else if (type == "") {
+        let filteredData = allData;
+        filteredData.forEach((site) => {
+            let card = document.createElement("section");
+            let name = document.createElement('h2');
+            let location = document.createElement('p');
+            let activities = document.createElement('p');
+            let photo = document.createElement('figure')
+            let image = document.createElement('img');
+            let more = document.createElement('a');
+            let dialog = document.createElement('dialog');
+            let div = document.createElement('div');
+            let closeButton = document.createElement('button');
+            let dialogBoxText = document.querySelector('#more div');
+    
+            location.classList.add('location');
+            activities.classList.add('activities');
+            dialog.setAttribute('id', 'more');            
+            
+            
+            closeButton.textContent = "X";
+            closeButton.setAttribute('id', 'closeButton');
+            closeButton.addEventListener("click", () => {
+                dialogBox.close();
+            }); 
+    
+            name.textContent = `${site.siteName}`;
+            location.innerHTML = `<strong>Location:</strong> ${site.location}`;
+            activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
+            
+            more.setAttribute('href', site.siteURL);
+            more.setAttribute('target', '_blank');
+            more.classList.add('button');
+            more.textContent = `Learn more`;                       
+    
+            image.setAttribute('src', site.image);
+            image.setAttribute('alt', `Image of ${site.siteName}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '300');
+            image.setAttribute('height', '200');
+            image.addEventListener("click", () => {
+                dialog.showModal();
+                dialogBoxText.innerHTML = `${site.videoURL}`;
+            });  
+            
+            photo.appendChild(image);
 
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(location);
-        card.appendChild(activities);
-        card.appendChild(button);
-
-        cards.append(card);      
-    });
+            dialog.appendChild(div);
+            dialog.appendChild(closeButton);            
+    
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(location);
+            card.appendChild(activities);
+            card.appendChild(more);
+            card.appendChild(dialog);
+    
+            cards.append(card);      
+        });
+    }
 }
 
-onload = () => {
-    getData();
+onload = () => {;
+    displaySites("");
     seeAll.classList.add('active'); 	    
 }
