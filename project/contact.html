@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigham Bagnes">
     <meta name="description" content="Seclusive Utah Contact Page">
-    <title>Logan City Chamber of Commerce</title>
+    <title>Seclusive Utah: Contact Us</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/seculsive-small.css">
     <link rel="stylesheet" href="styles/seclusive-large.css">    
@@ -16,7 +16,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/join-dates.js" defer></script>
-    <script src="scripts/membership-stats.js" type="module"></script>
+    <script src="scripts/modified.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sriracha&display=swap" rel="stylesheet">    
@@ -44,33 +44,25 @@
         <form method="GET" action="welcome.html" class="designOne">
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
               <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Last Name"></label>
-              <label>Title <input type="text" name="title" autocomplete="organization-title" title="Title" pattern="^[A-Za-z\- ]{7,}$"></label>
               <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Email" autocomplete="email"></label>
-              <label>Mobile Number <input type="tel" name="phone" required autocomplete="tel" title="Cell Phone Number with dashes" placeholder="987-555-1234" ></label>
-              <label>Business Name<input type="text" name="business-name" required autocomplete="organization" title="Business Name"></label>     
+              <label>Mobile Number <input type="tel" name="phone" required autocomplete="tel" title="Cell Phone Number with dashes" placeholder="987-555-1234" ></label>  
       
-              <h3>Select Membership Level</h3>
-              <label><input type="radio" name="level" value="Nonprofit">Nonprofit</label>
-              <label><input type="radio" name="level" value="Bronze" checked>Bronze</label>
-              <label><input type="radio" name="level" value="Silver">Silver</label>
-              <label><input type="radio" name="level" value="Gold">Gold</label>
-
               <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
-              <label>Business Description<textarea name="description" title="business-description"></textarea></label>
-              
+              <label>Ask Question/Make Suggestion<textarea name="description" maxlength="500"></textarea></label>
+              <label><strong>Want to know more?</strong><br><br><input class="subscribe" type="checkbox" name="subscribe">Sign up for our Newsletter</label>  
            
-              <button type="submit">Apply for Membership</button>
+              <button type="submit">Contact Us</button>
           </form>   
     </main>    
     <footer>
-        <p>Logan City Chamber of Commerce<br>73 N Main St, Logan, UT 84321<br>LoganCoC.com<br>435 555-1234</p>
+        <p id="lastModified"></p>
+        <a class="sources" href="https://bbagnes.github.io/wdd231/project/sources.html">*Sources*</a>
         <nav class="socialmedia">
             <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube_icon.webp" alt="Facebook"></a>
             <a href="https://Twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter" width="72"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_circle.webp" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon_circle.webp" alt="Linkedin"></a>
         
-        </nav>
-        <p id="lastModified"></p>
+        </nav>        
     </footer> 
 </body>
 </html>
