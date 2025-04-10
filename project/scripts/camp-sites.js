@@ -11,9 +11,9 @@ async function getData() {
     console.table(data.campSites);    
     onload = () => {
 	displaySites(data.campSites);
-	seeAll.classList.add('active');
-    return data;
+	seeAll.classList.add('active');    
     }
+    return data;
 }
 
 const data = getData();    
