@@ -48,6 +48,9 @@ const displaySites = (sites) => {
         let image = document.createElement('img');
         let button = document.createElement('button');
 
+        location.classList.add('location');
+        activities.classList.add('activities');
+
         name.textContent = `${site.siteName}`;
         location.innerHTML = `<strong>Location:</strong> ${site.location}`;
         activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
