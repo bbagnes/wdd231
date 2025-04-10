@@ -570,7 +570,7 @@ footer p, footer nav {
 }
 
 .sources {
-    list-style-type: none;
+    text-decoration: none;
     color: white;
     margin: 25px;
     border: var(--bord);

@@ -8,8 +8,8 @@ const uncrowded = document.querySelector(".uncrowded");
 async function getData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.campSites);
-    displaySites(data.campSites);	    
+    // console.table(data.campSites);
+    return data.campsites;	    
 };
 
 let clearActive  = () => {
@@ -20,27 +20,32 @@ let clearActive  = () => {
 
 seeAll.addEventListener("click", () => {
 	clearActive();
-	displaySites(data.campSites);	
+    let allData = getData();
+    console.table(allData);
+	displaySites(allData);	
 	all.classList.add('active');
 });
 
 sky.addEventListener("click", () => {
 	clearActive();
-	displaySites(data.campSites.filter(site => data.campSites.darkSky == true));	
+    let allData = getData();
+    console.table(allData);
+	displaySites(allData.filter(site => data.campSites.darkSky == true));	
 	sky.classList.add('active');
 });
 
 uncrowded.addEventListener("click", () => {
 	clearActive();
-	displaySites(data.campSites.filter(site => data.campSites.avgVisitors < 3000));	
+    let allData = getData();
+    console.table(allData);
+	displaySites(allData.filter(site => allData.avgVisitors < 3000));	
 	uncrowded.classList.add('active');
 });
 
 const displaySites = (sites) => {
 
     cards.innerHTML = "";
-
-    getData(sites);
+    console.table(sites);
         
     sites.forEach((site) => {
         let card = document.createElement("section");
