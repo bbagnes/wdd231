@@ -1,7 +1,7 @@
 @media only screen and (min-width: 640px) {
     .sites section {
         text-wrap: wrap;
-        height: 640px;
+        height: 620px;
         width: min-content;
         margin: 10px;
         grid-template-areas: 
@@ -90,7 +90,6 @@
         display: block;
         text-align: center;
         column-span: all;
-        margin: 10px;
     }
 
     main nav .selection {
@@ -160,10 +159,7 @@
 }
 
 @media only screen and (min-width: 1080px) {
-    main ul.call a {
-        top: 560px;
-    }
-
+    
     .sites div {
         display: grid;
         grid-template-columns: 1fr 1fr;

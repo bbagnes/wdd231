@@ -22,8 +22,8 @@
     },
     {
       "siteName": "Antelope Island State Park",
-      "location": "Camping, hiking, mountain biking, Horse Riding, Dark Sky.",
-      "recreationOptions": "41 miles north of Salt Lake City. Take Exit 332 off Interstate 15, then drive west on Antelope Drive to the park entrance gate. The park is 7 miles west of the entrance gate across the Davis County Causeway.",
+      "location": "41 miles north of Salt Lake City. Take Exit 332 off Interstate 15, then drive west on Antelope Drive to the park entrance gate. The park is 7 miles west of the entrance gate.",
+      "recreationOptions": "Camping, hiking, mountain biking, Horse Riding, Dark Sky.",
       "darkSky": true,
       "avgVisitors": 77677,  
       "siteURL": "https://stateparks.utah.gov/parks/antelope-island/",
