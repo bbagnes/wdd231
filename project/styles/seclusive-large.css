@@ -1,3 +1,17 @@
+@media only screen and (min-width: 640px) {
+    .sites section {
+        text-wrap: wrap;
+        height: 640px;
+        width: min-content;
+        margin: 10px;
+        grid-template-areas: 
+        "name name"
+        "image description"
+        "caption location"
+        "caption button";
+    }
+}
+
 @media only screen and (min-width: 780px) {
 
     header {
@@ -67,11 +81,6 @@
         padding: 10px;
     }
 
-    main.join {
-        display: flex;
-        flex-direction: row;
-    }
-
     main h1 {
         margin: 10px;
         padding: 0;
@@ -91,53 +100,12 @@
         text-align: center;
     }
 
-    .directory ul {
-        display: flex;
-        flex-direction:row;
-        margin: 0;
-    }
-
-    .directory li {
-        font-size: large;       
-    }
-
     nav .selection {
         margin: 0 auto;
     }
 
     nav .selection li {
         margin: 20px;
-    }
-
-    main.join {
-        display: grid;
-        grid-template-rows: min-content;
-        grid-template-columns:48% 48%;
-        height: auto;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    main div.directory {
-        display: flex;
-        width: 100%;      
-        flex-wrap: wrap;
-    }
-
-    div.levels {
-        display: flex;
-        grid-column: 2;
-        flex-direction: column;
-        margin-top: -180px;
-    }
-
-    div.levels section {
-        margin: 10px;
-        height: 120px;
-    }
-
-    main section.events {
-        width: 48%;
     }
     
     section {  
@@ -175,31 +143,23 @@
         margin-bottom: 10px;
     }
 
-    .sites section {
-        text-wrap: wrap;
-        height: 480px;
-        width: min-content;
-        margin: 10px;
-        grid-template-areas: 
-        "image name"
-        "image description"
-        "image location"
-        "image button";
-    }
-
     a.button {
         padding: 15px;
         height: 40px;
     }
 
     #more div {
-        width: 600px;
+        width: 720px;
         height: auto;
+    }
+
+    #more video {
+        width: 640px;
     }
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
     main ul.call a {
         top: 560px;
     }

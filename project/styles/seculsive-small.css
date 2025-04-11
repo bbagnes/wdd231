@@ -327,10 +327,10 @@ ul .directory, .sites div{
     grid-template-areas: 
     "name"
     "image"
+    "caption"
     "description"
     "location"
-    "button"
-    ;
+    "more";
 }
 
 .sites section h2 {
@@ -339,9 +339,6 @@ ul .directory, .sites div{
     text-wrap: wrap;
 }
 
-.sites section figure {
-    grid-area: image;
-}
 
 .sites section p {    
     padding: .1rem;
@@ -357,8 +354,18 @@ ul .directory, .sites div{
    grid-area: description; 
 }
 
+.sites section p.caption {
+    grid-area: caption;
+    background-color: var(--accent1-color);
+    width: 120px;    
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: var(--bord); 
+ }
+
 .sites section button {
-    grid-area: button;
+    grid-area: more;
     width: 80%;
     border-radius: 3px;
     text-align: center;
@@ -446,9 +453,10 @@ dialog {
 }
 
 dialog #closeButton {
+    display: block;
     width: 120px;
     text-align: center;
-    margin: 2px 90px;
+    margin: 2px auto;
 }
 
 dialog video{
@@ -459,8 +467,8 @@ dialog video{
 #more video {
     width: 300px;
     height: auto;
-    padding: 2%;
-    margin: 10px;
+    padding: 0;
+    margin: 2px auto;
 }
 
 section .weather {
@@ -469,24 +477,6 @@ section .weather {
     grid-row: auto;
     min-width: 300px;
     width: auto;
-}
-
-section .weather figure, section .weather img {
-    grid-column: 1;
-    width: 120px;
-    margin: 10px;
-    padding: 0;    
-}
-
-section .weather ul {
-    grid-column: 2;
-    text-align: left;
-    list-style: none;
-}
-
-section.forcast ul {
-    text-align: left;
-    list-style: none;
 }
 
 div .directory  {
@@ -531,10 +521,6 @@ main section button, button #closeButton {
 section figure {
     margin: 0;
     text-align: center;
-}
-
-figcaption {
-    font-size: smaller;
 }
 
 section h2 {
