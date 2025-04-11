@@ -445,7 +445,18 @@ dialog {
     margin: 300px auto;
 }
 
-#more div {
+dialog #closeButton {
+    width: 120px;
+    text-align: center;
+    margin: 2px 90px;
+}
+
+dialog video{
+    width: min-content;
+    height: auto;
+}
+
+#more video {
     width: 300px;
     height: auto;
     padding: 2%;

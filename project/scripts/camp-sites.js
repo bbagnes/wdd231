@@ -51,21 +51,29 @@ async function displaySites(type) {
             let location = document.createElement('p');
             let activities = document.createElement('p');
             let photo = document.createElement('figure')
+            let caption = document.createElement('figcaption');
             let image = document.createElement('img');
             let more = document.createElement('a');
             let dialog = document.createElement('dialog');
-            let div = document.createElement('div');
+            let video = document.createElement('video');
             let closeButton = document.createElement('button');
             let dialogBoxText = document.querySelector('#more div');
     
             location.classList.add('location');
             activities.classList.add('activities');
-            dialog.setAttribute('id', 'more');         
+            dialog.setAttribute('id', 'more');
+
+            video.setAttribute('src', site.videoURL);
+            video.setAttribute('width', 'min-content');
+            video.setAttribute('height', 'auto');
+            video.setAttribute('controls', 'true');
+            video.load();            
             
-            closeButton.textContent = "X";
+            caption.textContent = `See More`;
+            closeButton.textContent = "Close";
             closeButton.setAttribute('id', 'closeButton');
             closeButton.addEventListener("click", () => {
-                dialogBox.close();
+                dialog.close();
             }); 
     
             name.textContent = `${site.siteName}`;
@@ -84,12 +92,12 @@ async function displaySites(type) {
             image.setAttribute('height', '200');
             image.addEventListener("click", () => {
                 dialog.showModal();
-                dialogBoxText.innerHTML = `${site.videoURL}`;
             });  
             
             photo.appendChild(image);
+            photo.appendChild(caption);
 
-            dialog.appendChild(div);
+            dialog.appendChild(video);
             dialog.appendChild(closeButton);            
     
             card.appendChild(name);
@@ -99,7 +107,7 @@ async function displaySites(type) {
             card.appendChild(more);
             card.appendChild(dialog);
     
-            cards.append(card);     
+            cards.append(card);         
         });
 
     } else if (type == "uncrowded") {
@@ -111,18 +119,26 @@ async function displaySites(type) {
             let location = document.createElement('p');
             let activities = document.createElement('p');
             let photo = document.createElement('figure')
+            let caption = document.createElement('figcaption');
             let image = document.createElement('img');
             let more = document.createElement('a');
             let dialog = document.createElement('dialog');
-            let div = document.createElement('div');
+            let video = document.createElement('video');
             let closeButton = document.createElement('button');
             let dialogBoxText = document.querySelector('#more div');
     
             location.classList.add('location');
             activities.classList.add('activities');
-            dialog.setAttribute('id', 'more');         
+            dialog.setAttribute('id', 'more');
+
+            video.setAttribute('src', site.videoURL);
+            video.setAttribute('width', 'min-content');
+            video.setAttribute('height', 'auto');
+            video.setAttribute('controls', 'true');
+            video.load();            
             
-            closeButton.textContent = "X";
+            caption.textContent = `See More`;
+            closeButton.textContent = "Close";
             closeButton.setAttribute('id', 'closeButton');
             closeButton.addEventListener("click", () => {
                 dialog.close();
@@ -144,12 +160,12 @@ async function displaySites(type) {
             image.setAttribute('height', '200');
             image.addEventListener("click", () => {
                 dialog.showModal();
-                dialogBoxText.innerHTML = `${site.videoURL}`;
             });  
             
             photo.appendChild(image);
+            photo.appendChild(caption);
 
-            dialog.appendChild(div);
+            dialog.appendChild(video);
             dialog.appendChild(closeButton);            
     
             card.appendChild(name);
@@ -159,7 +175,7 @@ async function displaySites(type) {
             card.appendChild(more);
             card.appendChild(dialog);
     
-            cards.append(card);      
+            cards.append(card);        
         });
 
     } else if (type == "") {
@@ -170,19 +186,27 @@ async function displaySites(type) {
             let location = document.createElement('p');
             let activities = document.createElement('p');
             let photo = document.createElement('figure')
+            let caption = document.createElement('figcaption');
             let image = document.createElement('img');
             let more = document.createElement('a');
             let dialog = document.createElement('dialog');
-            let div = document.createElement('div');
+            let video = document.createElement('video');
             let closeButton = document.createElement('button');
             let dialogBoxText = document.querySelector('#more div');
     
             location.classList.add('location');
             activities.classList.add('activities');
-            dialog.setAttribute('id', 'more');            
+            dialog.setAttribute('id', 'more');
+
+            video.setAttribute('src', site.videoURL);
+            video.setAttribute('width', 'min-content');
+            video.setAttribute('height', 'auto');
+            video.setAttribute('controls', 'true');
+            video.setAttribute('title', 'YouTube video player');
+            video.load();            
             
-            
-            closeButton.textContent = "X";
+            caption.textContent = `See More`;
+            closeButton.textContent = "Close";
             closeButton.setAttribute('id', 'closeButton');
             closeButton.addEventListener("click", () => {
                 dialog.close();
@@ -204,12 +228,12 @@ async function displaySites(type) {
             image.setAttribute('height', '200');
             image.addEventListener("click", () => {
                 dialog.showModal();
-                dialogBoxText.innerHTML = `${site.videoURL}`;
             });  
             
             photo.appendChild(image);
+            photo.appendChild(caption);
 
-            dialog.appendChild(div);
+            dialog.appendChild(video);
             dialog.appendChild(closeButton);            
     
             card.appendChild(name);
@@ -228,3 +252,5 @@ onload = () => {;
     displaySites("");
     seeAll.classList.add('active'); 	    
 }
+
+
