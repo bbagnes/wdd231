@@ -115,11 +115,6 @@
         margin: 10px;
     }
 
-    main ul.call a {
-        top: 400px;
-        right: 25px;
-    } 
-
     main section.selected {
         display:flex;
         flex-direction: row;
@@ -170,16 +165,5 @@
     main picture {
         margin: 0 auto;
         text-align: center;
-    }
-    main picture.hero img {
-        display: block;
-        max-width: 1380px;
-        height: auto;
-        margin: 0 auto;
-    }
-    
-    main ul.call a {
-        top: 720px;
-        right: 120px;
     }
 }

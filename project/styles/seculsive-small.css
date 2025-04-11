@@ -234,21 +234,10 @@ form button[type=submit] {
 }
 
 
-  input:-webkit-autofill{
+input:-webkit-autofill{
     -webkit-text-fill-color: black;
-  }
-
-  h1.details {
-    margin-bottom: 200px;
-  }
-  
-
-main .hero img {
-    max-width: 1200px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
 }
+
 
 ul .selection {
     display: flex;
@@ -261,12 +250,7 @@ main nav {
     margin: 0 auto;
 }
 
-main ul.call {
-    position: relative;
-    list-style: none;
-}
-
-main ul.call a {
+main .call a {
     position: absolute;
     top: 100px;
     right: 25px;
@@ -295,9 +279,13 @@ nav .selection li {
     margin: 0 auto;    
 }
 
-ul .directory, .sites div{
+.sites div{
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0 auto;
 }
 
@@ -308,13 +296,6 @@ ul .directory, .sites div{
     justify-content: center;
     text-wrap: wrap;
     height: 90px;
-}
-
-.sites div {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
 }
 
 .sites section {
@@ -373,23 +354,6 @@ ul .directory, .sites div{
     margin: 0 auto;
 }
 
-.directory li {
-    list-style: none;
-    width: 300px;
-    font-size: medium;
-    text-wrap: wrap;
-    padding: 10px;
-    margin: 0;
-}
-
-.directory ul:nth-child(even) {
-	background-color: rgb(65, 230, 175);
-}
-
-.directory ul:nth-child(odd) {
-	background-color: rgb(255, 255, 255);
-}
-
 h2 {
     display: block;
     font-family: var(--heading-font, Arial, Helvetica, sans-serif);
@@ -402,22 +366,19 @@ h2 {
     margin: 0;
 }
 
-main h2.business, div.more h2 {
-    color: black;
-    font-weight: 900;
-}
-
-div.more h2 {
-    display: block;
-    width: 100px;
-    text-align: left;
-}
-
-div.more {
+ div.more {
     display: block;
     height: min-content;
     width: 300px;
     margin: 1%;
+}
+
+div.more h2 {
+    color: black;
+    font-weight: 900;
+    display: block;
+    width: 100px;
+    text-align: left;
 }
 
 div.more section {
@@ -471,22 +432,6 @@ dialog video{
     margin: 2px auto;
 }
 
-section .weather {
-    display: flex;
-    grid-template-columns: min-content min-content;
-    grid-row: auto;
-    min-width: 300px;
-    width: auto;
-}
-
-div .directory  {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
 section {
     display: block;
     min-width: 300px;
@@ -506,13 +451,6 @@ main section.selected {
     width: 100%;
 }
 
-main section.gold {
-    background-color: gold;
-    text-align: center;
-    font-size: medium;
-    margin: 10px 0;
-}
-
 main section button, button #closeButton {
     text-align: center;
     padding: 5px;
@@ -528,8 +466,6 @@ section h2 {
     text-align: center; 
     text-wrap: wrap;   
 }
-
-
 
 p {
     font: .8rem;
