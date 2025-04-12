@@ -4,7 +4,7 @@ const cards = document.querySelector('.sources div');
 async function getData() {
     const response = await fetch(sourceURL);
     const data = await response.json();
-    console.table(data.campSites);
+    // console.table(data.campSites);
     displaySources(data.campSites);    
 } 
 
