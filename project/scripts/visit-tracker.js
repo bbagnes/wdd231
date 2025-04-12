@@ -12,11 +12,11 @@ onload = () => {
          visit.innerHTML = `<br>Welcome! Pleas use our Contact Page if you have any questions or comments.`;
         
         } else if (daysAway >= 2) {
-            visit.innerHTML = `<br>Your last visit was ${daysAway.toFixed(0)} days ago.`;
+            visit.innerHTML = `<br>Welcome back. Your last visit was ${daysAway.toFixed(0)} days ago.`;
         } else if (daysAway == 1) {
-            visit.innerHTML = `<br>Your last visit was ${daysAway.toFixed(0)} day ago.`;
+            visit.innerHTML = `<br>Welcome back. Your last visit was ${daysAway.toFixed(0)} day ago.`;
         } else if (daysAway < 1) {            
-            visit.innerHTML = `<br>Back so soon! Awesome!`;
+            visit.innerHTML = `<br>Back so soon? Awesome!`;
         }
     window.localStorage.setItem("visit", thisDate);       
     };
