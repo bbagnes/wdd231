@@ -84,7 +84,7 @@ async function displaySites(type) {
             more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
-            more.textContent = `Learn more`;                       
+            more.textContent = `Visit Website`;                       
     
             image.setAttribute('src', site.image);
             image.setAttribute('alt', `Image of ${site.siteName}`);
@@ -154,7 +154,7 @@ async function displaySites(type) {
             more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
-            more.textContent = `Learn more`;                       
+            more.textContent = `Visit Website`;                       
     
             image.setAttribute('src', site.image);
             image.setAttribute('alt', `Image of ${site.siteName}`);
@@ -222,7 +222,7 @@ async function displaySites(type) {
             more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
-            more.textContent = `Learn more`;                       
+            more.textContent = `Visit Website`;                       
     
             image.setAttribute('src', site.image);
             image.setAttribute('alt', `Image of ${site.siteName}`);
