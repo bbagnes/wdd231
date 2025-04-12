@@ -68,6 +68,15 @@ h1 {
     margin: 80px 0 0 5px;  
 }
 
+h1 span {
+    display: block;
+    height: auto;
+    font-size: large;
+    font-weight: 500;
+    padding: 0;
+    text-align: left;
+    margin-left: 120px;
+}
 h1 span.visits {
     display: block;
     color: black;
@@ -77,16 +86,6 @@ h1 span.visits {
     text-align: left;
     text-wrap: wrap;    
     border: var(--bord);
-}
-
-h1 span {
-    display: block;
-    height: auto;
-    font-size: large;
-    font-weight: 500;
-    padding: 0;
-    text-align: left;
-    margin-left: 120px;
 }
 
 #menu {    
@@ -548,7 +547,6 @@ footer p, footer nav {
     text-decoration: none;
     color: white;
     margin: 25px;
-    border: var(--bord);
 }
 
 .sources h2, .sources ul, .sources li {

@@ -40,7 +40,7 @@ async function displaySites(type) {
 
     cards.innerHTML = "";
     let allData = await getData(type);
-    console.table(allData);
+    // console.table(allData);
 
     if (type == "sky") {
         let filteredData = allData.filter(data => data.darkSky === true);
