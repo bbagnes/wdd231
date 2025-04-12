@@ -9,7 +9,7 @@ onload = () => {
     // console.log(daysAway);
         
     if (visitDate === 0) {
-         visit.innerHTML = `<br>Welcome! See our Contact Page if you have any questions.`;
+         visit.innerHTML = `<br>Welcome! Pleas use our Contact Page if you have any questions or comments.`;
         
         } else if (daysAway >= 2) {
             visit.innerHTML = `<br>Your last visit was ${daysAway.toFixed(0)} days ago.`;

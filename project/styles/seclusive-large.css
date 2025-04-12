@@ -76,7 +76,6 @@
 
     main {
         display: block;
-        grid-template: 100px min-content min-content/ min-content;
         align-items: center;
         padding: 10px;
     }
@@ -159,6 +158,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    main.home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mission images"
+        "commitment commitment";
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -166,4 +172,6 @@
         margin: 0 auto;
         text-align: center;
     }
+
+    
 }
