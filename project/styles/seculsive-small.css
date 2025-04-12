@@ -198,7 +198,6 @@ main.home {
     grid-area: commitment;
     padding-left: 2px;
     height: min-content;
-    /* text-wrap: wrap; */
 }
 
 main h1 {
