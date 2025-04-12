@@ -182,7 +182,6 @@ main.home {
 }
 
 .home section.mission h2 {
-    color: black;
     margin: 2px;
     overflow: hidden;
 }
@@ -199,6 +198,7 @@ main.home {
     grid-area: commitment;
     padding-left: 2px;
     height: min-content;
+    /* text-wrap: wrap; */
 }
 
 main h1 {
