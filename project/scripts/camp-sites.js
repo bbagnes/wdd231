@@ -81,7 +81,7 @@ async function displaySites(type) {
             activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
             
             more.setAttribute('href', site.siteURL);
-            more.setAttribute('alt', `Link to ${site.siteName}`);
+            more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
             more.textContent = `Learn more`;                       
@@ -151,7 +151,7 @@ async function displaySites(type) {
             activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
             
             more.setAttribute('href', site.siteURL);
-            more.setAttribute('alt', `Link to ${site.siteName}`);
+            more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
             more.textContent = `Learn more`;                       
@@ -219,7 +219,7 @@ async function displaySites(type) {
             activities.innerHTML = `<strong>Activities:</strong> ${site.recreationOptions}`;
             
             more.setAttribute('href', site.siteURL);
-            more.setAttribute('alt', `Link to ${site.siteName}`);
+            more.setAttribute('aria-label', `Link to ${site.siteName}`);
             more.setAttribute('target', '_blank');
             more.classList.add('button');
             more.textContent = `Learn more`;                       
