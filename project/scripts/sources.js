@@ -13,11 +13,14 @@ const displaySources = (sources) => {
     sources.forEach((source) => {
         let card = document.createElement("ul");
         let sourceurl = document.createElement('li');
+        let videourl = document.createElement('li');
 
         card.innerHTML = `${source.siteName}:`;
-        sourceurl.innerHTML = `${source.siteURL}`;
+        sourceurl.innerHTML = `Images and Information: ${source.siteURL}`;
+        videourl.innerHTML = `Embedded Video: ${source.videoURL}`;
 
         card.appendChild(sourceurl);
+        card.appendChild(videourl);
 
         cards.append(card);      
     });
