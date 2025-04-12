@@ -6,10 +6,14 @@ const uncrowded = document.querySelector(".uncrowded");
 
 
 async function getData() {
-    const response = await fetch(url);
-    const data = await response.json();
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
     // console.table(data.campSites);
-    return data.campSites;	    
+        return data.campSites;
+    } catch (error) {
+        console.error(error);
+    }	    
 };
 
 let clearActive  = () => {
@@ -255,5 +259,4 @@ onload = () => {;
     displaySites("");
     seeAll.classList.add('active'); 	    
 }
-
 
