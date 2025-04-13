@@ -1,6 +1,6 @@
 const thisDate = new Date().getTime();
 
-onload = () => {
+window.addEventListener('load', (event) => {
     let visit = document.querySelector(".visits");
     let visitDate = Number(window.localStorage.getItem("visit")) || 0;
     console.log(thisDate);
@@ -19,6 +19,4 @@ onload = () => {
             visit.innerHTML = `<br>Back so soon? Awesome!`;
         }
     window.localStorage.setItem("visit", thisDate);       
-    };
-
-
+});

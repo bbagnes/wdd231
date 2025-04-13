@@ -4,7 +4,6 @@ const seeAll = document.querySelector(".all");
 const sky = document.querySelector(".sky");
 const uncrowded = document.querySelector(".uncrowded");
 
-
 async function getData() {
     try {
         const response = await fetch(url);
@@ -255,8 +254,9 @@ async function displaySites(type) {
     }
 }
 
-onload = () => {;
+window.addEventListener('load', (event) => {
     displaySites("");
-    seeAll.classList.add('active'); 	    
-}
+    seeAll.classList.add('active'); 
+});
+    	    
 
